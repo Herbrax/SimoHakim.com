@@ -12,7 +12,11 @@
     "resume:pdf": "node tools/build-resume.mjs && node tools/compile-resume.mjs",
     "serve": "npx --yes serve ."
   },
-  "devDependencies": {
+  "engines": {
+    "node": ">=18.17"
+  },
+  "//": "sharp is optional on purpose: only tools/optimize-images.mjs needs it, and a host that auto-installs dependencies must not fail the deploy over it.",
+  "optionalDependencies": {
     "sharp": "^0.34.0"
   }
 }

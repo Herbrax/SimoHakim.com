@@ -80,6 +80,36 @@ button on every page points at that one file, so a French reader still gets the
 English pages too. Merging uses `pdfunite` (poppler) when available and falls
 back to a `pdfpages` wrapper compiled with pdflatex.
 
+## Deploying
+
+The built site is committed — `index.html`, `<lang>/index.html`, `assets/`, the
+PDFs. **The host does not need to build anything**, so on Cloudflare Pages:
+
+| setting | value |
+|---|---|
+| Build command | *(leave empty)* |
+| Build output directory | `/` |
+| Root directory | *(leave empty)* |
+
+The generators are developer tooling, not a deploy step: run `npm run build`
+locally and commit the result.
+
+**Pages installs dependencies whenever it sees `package-lock.json`, even with an
+empty build command.** On the v2 build system that install runs under Node
+12.18.0, which is older than `sharp` and the lockfile format both allow, and the
+deploy fails. Three independent guards, any one of which is enough:
+
+- **Build system version 3** (Settings → Build system version) — modern LTS Node.
+- **`.node-version`** in this repo pins Node 20 on v2.
+- **`sharp` is an `optionalDependency`**, so even a failed install is not fatal —
+  only `npm run images` needs it; the site and resume generators do not.
+
+Setting the `SKIP_DEPENDENCY_INSTALL=1` environment variable skips the install
+outright, which is also correct here.
+
+Pages serves `/fr/index.html` at `/fr/` automatically, so the language switcher
+and the `hreflang` tags need no redirect rules.
+
 ## Contact form
 
 The form has no backend — it posts straight to [EmailJS](https://www.emailjs.com)

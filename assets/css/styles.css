@@ -118,8 +118,12 @@ ul { list-style: none; padding: 0; }
   font: 500 var(--step--1)/1 var(--font-mono);
   transform: translateY(-160%);
   transition: transform .25s var(--ease);
+  /* untappable while parked, so a stray tap near the top of a phone screen
+     can't focus it into view */
+  pointer-events: none;
 }
-.skip-link:focus { transform: none; }
+/* keyboard focus only — a touch or mouse focus leaves it hidden */
+.skip-link:focus-visible { transform: none; pointer-events: auto; }
 
 /* --------------------------------------------------------------- primitives */
 .wrap {

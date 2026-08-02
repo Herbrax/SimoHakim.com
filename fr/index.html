@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="light">
+<html lang="fr" dir="ltr" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simo Hakim — Computer Science Graduate - Software Engineer Junior</title>
-    <meta name="description" content="Simo Hakim — Computer Science Graduate - Software Engineer Junior, Montreal, Canada.">
+    <title>Simo Hakim — Diplômé en informatique - Ingénieur logiciel junior</title>
+    <meta name="description" content="Simo Hakim — Diplômé en informatique - Ingénieur logiciel junior, Montréal, Canada.">
     <meta name="author" content="Simo Hakim">
     <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0d0c0b" media="(prefers-color-scheme: dark)">
 
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en">
-    <meta property="og:title" content="Simo Hakim — Computer Science Graduate - Software Engineer Junior">
-    <meta property="og:description" content="Simo Hakim — Computer Science Graduate - Software Engineer Junior, Montreal, Canada.">
+    <meta property="og:locale" content="fr">
+    <meta property="og:title" content="Simo Hakim — Diplômé en informatique - Ingénieur logiciel junior">
+    <meta property="og:description" content="Simo Hakim — Diplômé en informatique - Ingénieur logiciel junior, Montréal, Canada.">
     <meta property="og:image" content="/assets/img/about-1000.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -20,16 +20,16 @@
     <link rel="alternate" hreflang="fr" href="/fr/">
     <link rel="alternate" hreflang="x-default" href="/">
 
-    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <script>
       // Applied before first paint so the correct theme is never repainted.
@@ -41,68 +41,42 @@
         } catch (e) {}
       })();
     </script>
-    <script>
-      // Language routing, in priority order:
-      //   1. the "lang" cookie — an explicit pick, remembered for a year
-      //   2. the browser's own languages, consulted once per session
-      //   3. this page (the default language)
-      (function () {
-        var available = ["en","fr"];
-        var go = function (code) { location.replace('/' + code + '/' + location.hash); };
-        try {
-          var saved = (document.cookie.match(/(?:^|;\s*)lang=([^;]*)/) || [])[1];
-          if (saved) {
-            saved = decodeURIComponent(saved);
-            if (saved !== 'en' && available.indexOf(saved) !== -1) go(saved);
-            return;
-          }
-          if (sessionStorage.getItem('lang-detected')) return;
-          sessionStorage.setItem('lang-detected', '1');
-          var wanted = (navigator.languages || [navigator.language || 'en'])
-            .map(function (x) { return String(x).toLowerCase().split('-')[0]; });
-          for (var i = 0; i < wanted.length; i++) {
-            if (wanted[i] === 'en') return;
-            if (available.indexOf(wanted[i]) !== -1) return go(wanted[i]);
-          }
-        } catch (e) {}
-      })();
-    </script>
   </head>
 
   <body>
-    <a class="skip-link" href="#about">Skip to content</a>
+    <a class="skip-link" href="#about">Aller au contenu</a>
 
     <!-- ============================================================ header -->
     <header class="header" id="header">
-      <nav class="nav wrap" aria-label="About">
+      <nav class="nav wrap" aria-label="À propos">
         <a href="#top" class="nav__logo">Simo Hakim</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-              <li style="--i:0"><a href="#about" class="nav__link" data-nav="about"><span>01</span>About</a></li>
-              <li style="--i:1"><a href="#skills" class="nav__link" data-nav="skills"><span>02</span>Skills</a></li>
-              <li style="--i:2"><a href="#experience" class="nav__link" data-nav="experience"><span>03</span>Career</a></li>
-              <li style="--i:3"><a href="#projects" class="nav__link" data-nav="projects"><span>04</span>Projects</a></li>
+              <li style="--i:0"><a href="#about" class="nav__link" data-nav="about"><span>01</span>À propos</a></li>
+              <li style="--i:1"><a href="#skills" class="nav__link" data-nav="skills"><span>02</span>Compétences</a></li>
+              <li style="--i:2"><a href="#experience" class="nav__link" data-nav="experience"><span>03</span>Parcours</a></li>
+              <li style="--i:3"><a href="#projects" class="nav__link" data-nav="projects"><span>04</span>Projets</a></li>
               <li style="--i:4"><a href="#contact" class="nav__link" data-nav="contact"><span>05</span>Contact</a></li>
           </ul>
-          <button class="icon-btn nav__close" id="nav-close" type="button" aria-label="Close menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="icon-btn nav__close" id="nav-close" type="button" aria-label="Fermer le menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
         </div>
 
         <div class="nav__tools">
           <div class="langmenu" id="langmenu">
             <button class="icon-btn langmenu__btn" id="lang-btn" type="button"
-                    aria-label="Language" aria-haspopup="true" aria-expanded="false">
-              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="langmenu__code">EN</span>
+                    aria-label="Langue" aria-haspopup="true" aria-expanded="false">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="langmenu__code">FR</span>
             </button>
-            <ul class="langmenu__list" id="lang-list" role="menu" aria-label="Language">
-              <li><a href="/" lang="en" hreflang="en" class="langmenu__item is-current" data-lang="en">English<svg class="ico langmenu__check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg></a></li>
-              <li><a href="/fr/" lang="fr" hreflang="fr" class="langmenu__item" data-lang="fr">Français</a></li>
+            <ul class="langmenu__list" id="lang-list" role="menu" aria-label="Langue">
+              <li><a href="/" lang="en" hreflang="en" class="langmenu__item" data-lang="en">English</a></li>
+              <li><a href="/fr/" lang="fr" hreflang="fr" class="langmenu__item is-current" data-lang="fr">Français<svg class="ico langmenu__check" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg></a></li>
             </ul>
           </div>
-          <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Passer au thème sombre" aria-pressed="false">
             <svg class="ico ico--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="ico ico--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           </button>
-          <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="15" y2="17"/></svg></button>
+          <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="15" y2="17"/></svg></button>
         </div>
         <span class="progress" id="progress" aria-hidden="true"></span>
       </nav>
@@ -114,15 +88,15 @@
     <div class="backdrop" id="backdrop" aria-hidden="true">
       <div class="hero__media hero__media--light">
         <img data-hero="light" alt="" width="2400" height="1350" fetchpriority="high" decoding="async"
-             data-src="assets/img/hero-light-1600.webp"
-             data-srcset="assets/img/hero-light-960.webp 960w, assets/img/hero-light-1600.webp 1600w, assets/img/hero-light-2400.webp 2400w"
+             data-src="../assets/img/hero-light-1600.webp"
+             data-srcset="../assets/img/hero-light-960.webp 960w, ../assets/img/hero-light-1600.webp 1600w, ../assets/img/hero-light-2400.webp 2400w"
              sizes="100vw"
              style="background:#cfe0ea url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAOABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGBAX/xAAkEAAABQIFBQAAAAAAAAAAAAAAAQIDBAUREhMhMVEUInFyof/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEgH/2gAMAwEAAhEDEQA/AHuNR2z7pDZH7BBuwyVbN05toOY5XZAyrqzhqxYE35sQ0XqMqJvo1bSW/oBOlW5JbKMvAA70Q//Z) center/cover">
       </div>
       <div class="hero__media hero__media--dark">
         <img data-hero="dark" alt="" width="2400" height="1600" fetchpriority="high" decoding="async"
-             data-src="assets/img/hero-dark-1600.webp"
-             data-srcset="assets/img/hero-dark-960.webp 960w, assets/img/hero-dark-1600.webp 1600w, assets/img/hero-dark-2400.webp 2400w"
+             data-src="../assets/img/hero-dark-1600.webp"
+             data-srcset="../assets/img/hero-dark-960.webp 960w, ../assets/img/hero-dark-1600.webp 1600w, ../assets/img/hero-dark-2400.webp 2400w"
              sizes="100vw"
              style="background:#131722 url(data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQABgDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACMQAAEDBAEEAwAAAAAAAAAAAAEAAgUDBBEhURIUIjEycYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAIRElH/2gAMAwEAAhEDEQA/AIlG1D8YI/dJpsY5w0M/SmiTvSCO4qYOtFaMmZFo6Rd1ABzhFmGFHXxjwPiUJGpMXzx5Xjzz6QizYMLp/9k=) center/cover">
       </div>
@@ -140,19 +114,19 @@
     <!-- ============================================================== hero -->
     <section class="hero" id="top">
       <div class="hero__inner wrap">
-        <p class="hero__eyebrow mono" data-anim style="--d:0">Montreal, Canada</p>
+        <p class="hero__eyebrow mono" data-anim style="--d:0">Montréal, Canada</p>
         <h1 class="hero__title" data-anim style="--d:120">Simo <span class="accent"><em>Hakim</em></span></h1>
-        <p class="hero__sub" data-anim style="--d:240">Computer Science Graduate - Software Engineer Junior</p>
+        <p class="hero__sub" data-anim style="--d:240">Diplômé en informatique - Ingénieur logiciel junior</p>
 
         <div class="hero__row" data-anim style="--d:360">
           <div class="hero__socials">
             <a href="https://www.linkedin.com/in/simo-hakim-b7a14413b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
             <a href="https://github.com/Herbrax" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
             <a href="https://twitter.com/herbrax" target="_blank" rel="noopener" aria-label="Twitter"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-            <a href="mailto:jobs@simohakim.com" aria-label="Email"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+            <a href="mailto:jobs@simohakim.com" aria-label="Courriel"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
           </div>
-          <a href="#about" class="hero__scroll mono" aria-label="Scroll">
-            Scroll
+          <a href="#about" class="hero__scroll mono" aria-label="Défiler">
+            Défiler
             <span class="mousey" aria-hidden="true"><span class="scroller"></span></span>
           </a>
         </div>
@@ -165,31 +139,31 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">01 /</span>
-            <h2 class="shead__title">About <em>me</em></h2>
+            <h2 class="shead__title">À <em>propos</em></h2>
             <p class="shead__meta mono">Introduction</p>
           </header>
 
           <div class="about__grid">
             <figure class="about__figure reveal">
               <picture>
-                <source srcset="assets/img/portrait-520.webp 520w, assets/img/portrait-900.webp 900w" sizes="(min-width: 56em) 21rem, 60vw" type="image/webp">
-                <img src="assets/img/portrait-900.png" alt="Simo Hakim" width="900" height="930" loading="lazy" decoding="async">
+                <source srcset="../assets/img/portrait-520.webp 520w, ../assets/img/portrait-900.webp 900w" sizes="(min-width: 56em) 21rem, 60vw" type="image/webp">
+                <img src="../assets/img/portrait-900.png" alt="Simo Hakim" width="900" height="930" loading="lazy" decoding="async">
               </picture>
             </figure>
 
             <div>
-              <p class="about__text reveal" style="--d:80">As Arthur C. Clarke once said, 'Any sufficiently advanced technology is indistinguishable from magic.' That idea still shapes how I approach the work. Since finishing my B.Sc. in Computer Science at the University of Montreal, I've spent the start of my career at Desjardins, a well-known Canadian financial institution: first building tools and migrating mission-critical applications in asset management, then engineering data platforms for auto and home insurance, and today maintaining the cloud-native integration APIs and .NET backends that internal teams rely on every day.</p>
-              <p class="about__text reveal" style="--d:140">Outside of work I'm a CFA candidate preparing for the Level I exam, which is also what took me to the certificate in market finance at HEC Montreal. The rest of my time goes to a steady stream of side projects — pricing comparators, tournament software, a solar flare detector — mostly as an excuse to learn something new.</p>
+              <p class="about__text reveal" style="--d:80">Comme le disait Arthur C. Clarke, « toute technologie suffisamment avancée est indiscernable de la magie ». Cette idée façonne encore ma façon d'aborder le métier. Depuis la fin de mon B.Sc. en informatique à l'Université de Montréal, j'ai commencé ma carrière chez Desjardins, une institution financière canadienne bien connue : d'abord en développant des outils et en migrant des applications critiques en gestion d'actifs, puis en bâtissant des plateformes de données pour l'assurance auto et habitation, et aujourd'hui en maintenant les APIs d'intégration infonuagiques et les backends .NET dont les équipes internes dépendent au quotidien.</p>
+              <p class="about__text reveal" style="--d:140">En dehors du travail, je suis candidat au CFA et je prépare l'examen de niveau I, ce qui m'a d'ailleurs mené au certificat en finance de marché à HEC Montréal. Le reste de mon temps va à un flux constant de projets personnels — comparateurs de prix, logiciels de tournoi, un détecteur d'éruptions solaires — surtout comme prétexte pour apprendre quelque chose de neuf.</p>
 
               <div class="stats reveal" style="--d:220">
-              <div class="stat"><div class="stat__n">4+</div><span class="stat__l mono">Years in industry</span></div>
-              <div class="stat"><div class="stat__n">50+</div><span class="stat__l mono">Projects shipped</span></div>
-              <div class="stat"><div class="stat__n">20+</div><span class="stat__l mono">Tools &amp; languages</span></div>
+              <div class="stat"><div class="stat__n">4+</div><span class="stat__l mono">Ans d'expérience</span></div>
+              <div class="stat"><div class="stat__n">50+</div><span class="stat__l mono">Projets livrés</span></div>
+              <div class="stat"><div class="stat__n">20+</div><span class="stat__l mono">Outils &amp; langages</span></div>
               </div>
 
               <div class="about__actions reveal" style="--d:260">
-                <a class="btn" href="assets/pdf/Resume.pdf" download><span>Download CV</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
-                <a class="btn btn--ghost" href="#contact"><span>Get in touch</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+                <a class="btn" href="../assets/pdf/Resume.pdf" download><span>Télécharger le CV</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+                <a class="btn btn--ghost" href="#contact"><span>Me contacter</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
               </div>
             </div>
           </div>
@@ -201,99 +175,99 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">02 /</span>
-            <h2 class="shead__title">Skills &amp; <em>stack</em></h2>
-            <p class="shead__meta mono">Technical competence</p>
+            <h2 class="shead__title">Compétences &amp; <em>outils</em></h2>
+            <p class="shead__meta mono">Compétences techniques</p>
           </header>
           <div class="skills__grid">
             <div class="skillset reveal">
-              <h3 class="skillset__title"><span>Programming Skills</span><span>10</span></h3>
+              <h3 class="skillset__title"><span>Programmation</span><span>10</span></h3>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">C#</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="C#: Advanced">
+                <div class="skill__bar" role="img" aria-label="C#: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:0"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Java</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Java: Advanced">
+                <div class="skill__bar" role="img" aria-label="Java: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:1"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Python</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Python: Advanced">
+                <div class="skill__bar" role="img" aria-label="Python: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:2"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">SQL</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="SQL: Advanced">
+                <div class="skill__bar" role="img" aria-label="SQL: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:3"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">HTML/CSS</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="HTML/CSS: Intermediate">
+                <div class="skill__bar" role="img" aria-label="HTML/CSS: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:4"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Javascript</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Javascript: Intermediate">
+                <div class="skill__bar" role="img" aria-label="Javascript: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:5"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">React</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="React: Intermediate">
+                <div class="skill__bar" role="img" aria-label="React: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:6"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Flutter</h4>
-                  <span class="skill__lvl">Beginner</span>
+                  <span class="skill__lvl">Débutant</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Flutter: Beginner">
+                <div class="skill__bar" role="img" aria-label="Flutter: Débutant">
                   <span class="skill__fill" style="--pct:20%;--j:7"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Julia</h4>
-                  <span class="skill__lvl">Beginner</span>
+                  <span class="skill__lvl">Débutant</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Julia: Beginner">
+                <div class="skill__bar" role="img" aria-label="Julia: Débutant">
                   <span class="skill__fill" style="--pct:20%;--j:8"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">KDB+</h4>
-                  <span class="skill__lvl">Beginner</span>
+                  <span class="skill__lvl">Débutant</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="KDB+: Beginner">
+                <div class="skill__bar" role="img" aria-label="KDB+: Débutant">
                   <span class="skill__fill" style="--pct:20%;--j:9"></span>
                 </div>
               </div>
@@ -303,90 +277,90 @@
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Git</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Git: Advanced">
+                <div class="skill__bar" role="img" aria-label="Git: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:0"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">MS Office</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="MS Office: Advanced">
+                <div class="skill__bar" role="img" aria-label="MS Office: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:1"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Latex</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Latex: Advanced">
+                <div class="skill__bar" role="img" aria-label="Latex: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:2"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Azure</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Azure: Advanced">
+                <div class="skill__bar" role="img" aria-label="Azure: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:3"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Oracle ADB</h4>
-                  <span class="skill__lvl">Advanced</span>
+                  <span class="skill__lvl">Avancé</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Oracle ADB: Advanced">
+                <div class="skill__bar" role="img" aria-label="Oracle ADB: Avancé">
                   <span class="skill__fill" style="--pct:80%;--j:4"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Android Studio</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Android Studio: Intermediate">
+                <div class="skill__bar" role="img" aria-label="Android Studio: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:5"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Arduino/ESP32</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Arduino/ESP32: Intermediate">
+                <div class="skill__bar" role="img" aria-label="Arduino/ESP32: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:6"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">PyTorch/Tenserflow</h4>
-                  <span class="skill__lvl">Intermediate</span>
+                  <span class="skill__lvl">Intermédiaire</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="PyTorch/Tenserflow: Intermediate">
+                <div class="skill__bar" role="img" aria-label="PyTorch/Tenserflow: Intermédiaire">
                   <span class="skill__fill" style="--pct:60%;--j:7"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">AWS</h4>
-                  <span class="skill__lvl">Beginner</span>
+                  <span class="skill__lvl">Débutant</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="AWS: Beginner">
+                <div class="skill__bar" role="img" aria-label="AWS: Débutant">
                   <span class="skill__fill" style="--pct:20%;--j:8"></span>
                 </div>
               </div>
               <div class="skill">
                 <div class="skill__head">
                   <h4 class="skill__name">Firebase</h4>
-                  <span class="skill__lvl">Beginner</span>
+                  <span class="skill__lvl">Débutant</span>
                 </div>
-                <div class="skill__bar" role="img" aria-label="Firebase: Beginner">
+                <div class="skill__bar" role="img" aria-label="Firebase: Débutant">
                   <span class="skill__fill" style="--pct:20%;--j:9"></span>
                 </div>
               </div>
@@ -400,68 +374,68 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">03 /</span>
-            <h2 class="shead__title">Career <em>timeline</em></h2>
-            <p class="shead__meta mono">Academic &amp; professional path</p>
+            <h2 class="shead__title">Mon <em>parcours</em></h2>
+            <p class="shead__meta mono">Parcours académique et professionnel</p>
           </header>
           <div class="cv__split">
             <div class="cv__col">
-              <h3 class="cv__label">Education</h3>
+              <h3 class="cv__label">Formation</h3>
               <div class="tl">
                 <article class="tl__item is-left reveal" style="grid-row:1;--d:0">
                   <span class="tl__dot" aria-hidden="true"></span>
                   <span class="tl__degree">B.Sc.</span>
-                  <h4 class="tl__title">Computer Sciences</h4>
-                  <span class="tl__org">University of Montreal</span>
+                  <h4 class="tl__title">Informatique</h4>
+                  <span class="tl__org">Université de Montréal</span>
                   <span class="tl__when">2020 - 2024</span>
                   
                 </article>
                 <article class="tl__item is-right reveal" style="grid-row:2;--d:70">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <span class="tl__degree">Certificate</span>
-                  <h4 class="tl__title">Market Finance</h4>
+                  <span class="tl__degree">Certificat</span>
+                  <h4 class="tl__title">Finance de marché</h4>
                   <span class="tl__org">HEC Montreal</span>
-                  <span class="tl__when">2025 - 2026<span class="tl__tag">Ongoing</span></span>
-                  <p class="tl__note">Ongoing</p>
+                  <span class="tl__when">2025 - 2026<span class="tl__tag">En cours</span></span>
+                  <p class="tl__note">En cours</p>
                 </article>
               </div>
             </div>
             <div class="cv__col">
-              <h3 class="cv__label">Work</h3>
+              <h3 class="cv__label">Expérience</h3>
               <div class="tl">
                 <article class="tl__item is-left reveal" style="grid-row:1;--d:0">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <h4 class="tl__title">Full Stack Engineer</h4>
-                  <span class="tl__org">Mouvement Desjardins - Direction Executive Solutions, Montreal, QC</span>
-                  <span class="tl__when">Jan 2026 - Present<span class="tl__tag">Current</span></span>
-                  <p class="tl__note">Maintains critical cloud-native integration APIs and builds .NET backends for internal finance and operations applications.</p>
+                  <h4 class="tl__title">Ingénieur full stack</h4>
+                  <span class="tl__org">Mouvement Desjardins - Direction Solutions Exécutives, Montréal, QC</span>
+                  <span class="tl__when">Jan 2026 - Present<span class="tl__tag">Actuel</span></span>
+                  <p class="tl__note">Maintient les APIs d'intégration infonuagiques critiques et développe les backends .NET des applications internes de finance et d'opérations.</p>
                 </article>
                 <article class="tl__item is-right reveal" style="grid-row:2;--d:70">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <h4 class="tl__title">Data Engineer</h4>
-                  <span class="tl__org">Desjardins General Insurance Group, Montreal, QC</span>
+                  <h4 class="tl__title">Ingénieur de données</h4>
+                  <span class="tl__org">Desjardins Groupe d'Assurances Générales, Montréal, QC</span>
                   <span class="tl__when">Apr 2025 - Jan 2026</span>
-                  <p class="tl__note">Contributed to data engineering efforts supporting insurance solutions and operational continuity.</p>
+                  <p class="tl__note">A contribué aux travaux d'ingénierie de données soutenant les solutions d'assurance et la continuité des opérations.</p>
                 </article>
                 <article class="tl__item is-left reveal" style="grid-row:3;--d:140">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <h4 class="tl__title">Software Engineer Intern - .NET/SQL</h4>
-                  <span class="tl__org">Desjardins Global Asset Management, Montreal, QC</span>
+                  <h4 class="tl__title">Stagiaire en génie logiciel - .NET/SQL</h4>
+                  <span class="tl__org">Gestion mondiale d'actifs Desjardins, Montréal, QC</span>
                   <span class="tl__when">Sept 2024 - Apr 2025</span>
-                  <p class="tl__note">Developed tools and supported critical application migrations for asset management operations.</p>
+                  <p class="tl__note">A développé des outils et soutenu des migrations d'applications critiques pour les opérations de gestion d'actifs.</p>
                 </article>
                 <article class="tl__item is-right reveal" style="grid-row:4;--d:210">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <h4 class="tl__title">QA Data Entry Lead</h4>
-                  <span class="tl__org">LXT AI, Montreal, QC</span>
+                  <h4 class="tl__title">Responsable qualité - saisie de données</h4>
+                  <span class="tl__org">LXT AI, Montréal, QC</span>
                   <span class="tl__when">Feb 2022 - Sept 2023</span>
-                  <p class="tl__note">Led a team ensuring high-quality data entry for large language model training.</p>
+                  <p class="tl__note">A dirigé une équipe assurant une saisie de données de haute qualité pour l'entraînement de grands modèles de langage.</p>
                 </article>
                 <article class="tl__item is-left reveal" style="grid-row:5;--d:280">
                   <span class="tl__dot" aria-hidden="true"></span>
-                  <h4 class="tl__title">Deputy Internal VP + Graduating Students Representative</h4>
-                  <span class="tl__org">AEDIROUM (Student Association), Montreal, QC</span>
+                  <h4 class="tl__title">VP interne adjoint + représentant des finissants</h4>
+                  <span class="tl__org">AEDIROUM (association étudiante), Montréal, QC</span>
                   <span class="tl__when">Sept 2023 - Sept 2024</span>
-                  <p class="tl__note">Engaged in student representation and committee advocacy for student needs.</p>
+                  <p class="tl__note">Impliqué dans la représentation étudiante et la défense des besoins des étudiants en comité.</p>
                 </article>
               </div>
             </div>
@@ -474,54 +448,54 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">04 /</span>
-            <h2 class="shead__title">Personal <em>projects</em></h2>
-            <p class="shead__meta mono">Side work &amp; experiments</p>
+            <h2 class="shead__title">Projets <em>personnels</em></h2>
+            <p class="shead__meta mono">Projets et expérimentations</p>
           </header>
           <div class="projects">
             <article class="project reveal has-link">
               <span class="project__num">01</span>
-              <h3 class="project__name"><a class="project__link" href="https://mobideal.ca" target="_blank" rel="noopener">Mobideal.ca<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3>
-              <p class="project__desc">Phone pricing comparator across Best Buy, Costco Mobile, and Walmart Wireless. Architecture includes an Oracle Autonomous Database and a Python script running on an Oracle Cloud VM that scrapes APIs every 8 hours to update the database. The frontend is built with React and connects to the Oracle DB through its own API.</p>
+              <h3 class="project__name"><a class="project__link" href="https://mobideal.ca" target="_blank" rel="noopener">Mobideal.ca<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (ouvre un nouvel onglet)</span></a></h3>
+              <p class="project__desc">Comparateur de prix de téléphones entre Best Buy, Costco Mobile et Walmart Wireless. L'architecture repose sur une base Oracle Autonomous Database et un script Python hébergé sur une VM Oracle Cloud qui interroge les APIs des détaillants toutes les 8 heures pour mettre à jour les données. Le frontend est développé en React et accède à la base Oracle via sa propre API.</p>
             </article>
             <article class="project reveal has-link">
               <span class="project__num">02</span>
-              <h3 class="project__name"><a class="project__link" href="https://resumeturbo.com" target="_blank" rel="noopener">ResumeTurbo.com<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3>
-              <p class="project__desc">Dynamic online resume generator. Implemented SwiftLaTeX, a WebAssembly LaTeX compiler, for real-time in-browser LaTeX rendering, and Mozilla's PDF.js for cross-platform PDF viewing.</p>
+              <h3 class="project__name"><a class="project__link" href="https://resumeturbo.com" target="_blank" rel="noopener">ResumeTurbo.com<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (ouvre un nouvel onglet)</span></a></h3>
+              <p class="project__desc">Générateur de CV en ligne dynamique. Intègre SwiftLaTeX, un compilateur LaTeX en WebAssembly, pour un rendu LaTeX en temps réel dans le navigateur, ainsi que PDF.js de Mozilla pour l'affichage multiplateforme des PDF.</p>
             </article>
             <article class="project reveal has-link">
               <span class="project__num">03</span>
-              <h3 class="project__name"><a class="project__link" href="https://simohakim.com" target="_blank" rel="noopener">SimoHakim.com + Generator<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3>
-              <p class="project__desc">Tool that generates a portfolio website and a matching LaTeX resume from a single JSON file. Example implementation: SimoHakim.com, my personal website.</p>
+              <h3 class="project__name"><a class="project__link" href="https://simohakim.com" target="_blank" rel="noopener">SimoHakim.com + Generator<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (ouvre un nouvel onglet)</span></a></h3>
+              <p class="project__desc">Outil qui génère un site portfolio et un CV LaTeX assorti à partir d'un seul fichier JSON. Exemple d'implantation : SimoHakim.com, mon site personnel.</p>
             </article>
             <article class="project reveal has-link">
               <span class="project__num">04</span>
-              <h3 class="project__name"><a class="project__link" href="https://tothefinal.app" target="_blank" rel="noopener">ToTheFinal.app<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3>
-              <p class="project__desc">World Cup companion built to answer the questions my friends and I kept asking mid-tournament: who do we play next, can we still finish first, and what time is kickoff here? One webapp with live scores, group standings, a knockout bracket that updates as results land, outcome simulation, and kickoff times in both your timezone and the stadium's. Built entirely in React, with Cloudflare Workers proxying and caching the score API to stay clear of its rate limits. Free, ad-free and account-free — it reached 200,000 users over the course of the tournament.</p>
+              <h3 class="project__name"><a class="project__link" href="https://tothefinal.app" target="_blank" rel="noopener">ToTheFinal.app<span class="project__ext" aria-hidden="true">↗</span><span class="sr-only"> (ouvre un nouvel onglet)</span></a></h3>
+              <p class="project__desc">Compagnon de Coupe du monde né des questions que mes amis et moi nous posions en plein tournoi : qui affronte-t-on ensuite, peut-on encore finir premier, et à quelle heure joue-t-on ici ? Une seule application web réunit les scores en direct, les classements de groupes, un tableau des éliminatoires qui se met à jour au fil des résultats, la simulation de scénarios et les heures de match affichées à la fois dans votre fuseau et dans celui du stade. Entièrement développée en React, avec des Cloudflare Workers qui relaient et mettent en cache l'API de scores pour rester sous ses limites de débit. Gratuite, sans publicité ni compte — elle a rejoint 200 000 utilisateurs durant le tournoi.</p>
             </article>
             <article class="project reveal">
               <span class="project__num">05</span>
               <h3 class="project__name">Pairings.cloud</h3>
-              <p class="project__desc">Web application for ranking and pairing players in large Swiss-system tournaments. Built with React for the Participants site and Electron for the Tournament Organizer companion app, leveraging Firebase as the backend database.</p>
+              <p class="project__desc">Application web de classement et d'appariement des joueurs dans les grands tournois au système suisse. Développée en React pour le site des participants et en Electron pour l'application compagnon des organisateurs, avec Firebase comme base de données.</p>
             </article>
             <article class="project reveal">
               <span class="project__num">06</span>
               <h3 class="project__name">ASCII Sign Language Classification (Kaggle)</h3>
-              <p class="project__desc">Achieved 1st place in a Kaggle competition focused on classifying sign language images, using Random Forest and Convolutional Neural Networks (CNN) enhanced with XGBoost.</p>
+              <p class="project__desc">1re place dans une compétition Kaggle portant sur la classification d'images de langue des signes, à l'aide de forêts aléatoires et de réseaux de neurones convolutifs (CNN) enrichis par XGBoost.</p>
             </article>
             <article class="project reveal">
               <span class="project__num">07</span>
               <h3 class="project__name">Classification of Extreme Weather Events (Kaggle)</h3>
-              <p class="project__desc">Developed models for detecting and classifying extreme weather events using climate data. Employed Logistic Regression, Linear SVM, and XGBoost.</p>
+              <p class="project__desc">Développement de modèles de détection et de classification d'événements météorologiques extrêmes à partir de données climatiques, au moyen de la régression logistique, du SVM linéaire et de XGBoost.</p>
             </article>
             <article class="project reveal">
               <span class="project__num">08</span>
               <h3 class="project__name">Solar Flare Detection via Radio Blackouts Phenomenon</h3>
-              <p class="project__desc">Building a machine learning model to locally detect solar flares in real time by monitoring radio frequencies (5–25 MHz) via RTL-SDR hardware.</p>
+              <p class="project__desc">Construction d'un modèle d'apprentissage automatique capable de détecter localement les éruptions solaires en temps réel par la surveillance des fréquences radio (5 à 25 MHz) au moyen d'un RTL-SDR.</p>
             </article>
             <article class="project reveal">
               <span class="project__num">09</span>
               <h3 class="project__name">AbraCarta - Shopify App</h3>
-              <p class="project__desc">Shopify-integrated platform that helps card shop owners manage live inventory, automate updates, and display pricing in storefronts. Architected with a .NET backend, React/Remix frontend, RESTful APIs for internal operations, and GraphQL for Shopify integration.</p>
+              <p class="project__desc">Plateforme intégrée à Shopify qui aide les boutiques de cartes à gérer leur inventaire en direct, à automatiser les mises à jour et à afficher les prix en vitrine. Architecture composée d'un backend .NET, d'un frontend React/Remix, d'APIs REST pour les opérations internes et de GraphQL pour l'intégration Shopify.</p>
             </article>
           </div>
         </div>
@@ -532,20 +506,20 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">05 /</span>
-            <h2 class="shead__title">Kind <em>words</em></h2>
-            <p class="shead__meta mono">References</p>
+            <h2 class="shead__title">Quelques <em>mots</em></h2>
+            <p class="shead__meta mono">Références</p>
           </header>
           <div class="quotes">
             <figure class="quote reveal" style="--d:0">
               <blockquote class="quote__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
               <figcaption class="quote__by">
                 <picture>
-                  <source srcset="assets/img/avatar-b-160.webp" type="image/webp">
-                  <img src="assets/img/avatar-b-160.png" alt="" width="160" height="160" loading="lazy" decoding="async">
+                  <source srcset="../assets/img/avatar-b-160.webp" type="image/webp">
+                  <img src="../assets/img/avatar-b-160.png" alt="" width="160" height="160" loading="lazy" decoding="async">
                 </picture>
                 <div>
                   <div class="quote__name">Mr. Lorem Ipsum</div>
-                  <div class="quote__role">Canada Computers, Manager</div>
+                  <div class="quote__role">Canada Computers, gestionnaire</div>
                 </div>
               </figcaption>
             </figure>
@@ -553,12 +527,12 @@
               <blockquote class="quote__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</blockquote>
               <figcaption class="quote__by">
                 <picture>
-                  <source srcset="assets/img/avatar-a-160.webp" type="image/webp">
-                  <img src="assets/img/avatar-a-160.png" alt="" width="160" height="160" loading="lazy" decoding="async">
+                  <source srcset="../assets/img/avatar-a-160.webp" type="image/webp">
+                  <img src="../assets/img/avatar-a-160.png" alt="" width="160" height="160" loading="lazy" decoding="async">
                 </picture>
                 <div>
                   <div class="quote__name">Dr. Tempor Ut Labore</div>
-                  <div class="quote__role">LXT AI, Team Lead</div>
+                  <div class="quote__role">LXT AI, chef d'équipe</div>
                 </div>
               </figcaption>
             </figure>
@@ -571,22 +545,22 @@
         <div class="wrap">
           <header class="shead reveal">
             <span class="shead__num">06 /</span>
-            <h2 class="shead__title">Get in <em>touch</em></h2>
+            <h2 class="shead__title">Me <em>contacter</em></h2>
             <p class="shead__meta mono">Contact</p>
           </header>
 
           <div class="contact__grid">
             <div>
-              <p class="contact__lede reveal">Have a role, a project, or a question? The inbox is open.</p>
+              <p class="contact__lede reveal">Un poste, un projet ou une question ? Ma boîte est ouverte.</p>
               <div class="cinfo reveal" style="--d:80">
                 <a href="tel:+14387004770">
-                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span><span class="cinfo__k">Phone</span><span class="cinfo__v">+1 (438) 700-4770</span></span>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span><span class="cinfo__k">Téléphone</span><span class="cinfo__v">+1 (438) 700-4770</span></span>
                 </a>
                 <a href="mailto:jobs@simohakim.com">
-                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><span class="cinfo__k">Email</span><span class="cinfo__v">jobs@simohakim.com</span></span>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><span class="cinfo__k">Courriel</span><span class="cinfo__v">jobs@simohakim.com</span></span>
                 </a>
                 <div>
-                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><span class="cinfo__k">Location</span><span class="cinfo__v">Montreal, Canada</span></span>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><span class="cinfo__k">Localisation</span><span class="cinfo__v">Montréal, Canada</span></span>
                 </div>
               </div>
             </div>
@@ -594,29 +568,29 @@
             <form class="form reveal" id="contact-form" style="--d:120" novalidate>
               <div class="form__row">
                 <div class="field">
-                  <label for="fullName">Full name</label>
-                  <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" autocomplete="name" required>
+                  <label for="fullName">Nom complet</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Jean Tremblay" autocomplete="name" required>
                   <span class="field__err" id="fullName-error" aria-live="polite"></span>
                 </div>
                 <div class="field">
-                  <label for="email_id">Email</label>
-                  <input type="email" id="email_id" name="email_id" placeholder="jane@company.com" autocomplete="email" required>
+                  <label for="email_id">Courriel</label>
+                  <input type="email" id="email_id" name="email_id" placeholder="jean@entreprise.com" autocomplete="email" required>
                   <span class="field__err" id="email_id-error" aria-live="polite"></span>
                 </div>
               </div>
               <div class="field">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="De quoi s’agit-il ?">
                 <span class="field__err" id="subject-error" aria-live="polite"></span>
               </div>
               <div class="field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" placeholder="Tell me a little about it…" required></textarea>
+                <textarea id="message" name="message" rows="6" placeholder="Dites-m’en un peu plus…" required></textarea>
                 <span class="field__err" id="message-error" aria-live="polite"></span>
               </div>
               <div class="form__foot">
-                <button class="btn" type="submit" id="send-btn"><span>Send message</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></button>
-                <span class="mono" style="color:var(--ink-faint)">Usually replies within a day</span>
+                <button class="btn" type="submit" id="send-btn"><span>Envoyer</span><svg class="ico btn__ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></button>
+                <span class="mono" style="color:var(--ink-faint)">Réponse sous 24 h en général</span>
               </div>
             </form>
           </div>
@@ -630,13 +604,13 @@
         <div class="footer__grid">
           <div>
             <a href="#top" class="footer__name">Simo Hakim</a>
-            <p class="footer__tag">Computer Science Graduate - Software Engineer Junior — Montreal, Canada.</p>
+            <p class="footer__tag">Diplômé en informatique - Ingénieur logiciel junior — Montréal, Canada.</p>
           </div>
           <nav class="footer__links" aria-label="Contact">
-              <a href="#about">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#experience">Career</a>
-              <a href="#projects">Projects</a>
+              <a href="#about">À propos</a>
+              <a href="#skills">Compétences</a>
+              <a href="#experience">Parcours</a>
+              <a href="#projects">Projets</a>
               <a href="#contact">Contact</a>
           </nav>
           <div class="footer__socials">
@@ -646,17 +620,17 @@
           </div>
         </div>
         <div class="footer__base mono">
-          <span>© 2026 Simo Hakim · All rights reserved</span>
+          <span>© 2026 Simo Hakim · Tous droits réservés</span>
           <span>v2.0</span>
         </div>
       </div>
     </footer>
 
-    <a href="#top" class="to-top" id="to-top" aria-label="Back to top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5,12 12,5 19,12"/></svg></a>
+    <a href="#top" class="to-top" id="to-top" aria-label="Haut de page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5,12 12,5 19,12"/></svg></a>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script id="site-config" type="application/json">{"emailjs":{"publicKey":"GBk_Bz7_Q8cZU6TcT","serviceId":"service_hzaatpy","templateId":"template_ih5vxot","to":"jobs@simohakim.com"},"errName":"Enter your full name","errEmail":"Enter a valid email address","errMessage":"A few more words, please","toastFix":"Please fix the highlighted fields","toastSent":"Message sent — thank you!","toastFail":"Sending failed. Email jobs@simohakim.com instead.","send":"Send message","sending":"Sending…","themeDark":"Switch to dark theme","themeLight":"Switch to light theme","subjectFallback":"Contact — simohakim.com"}</script>
+    <script id="site-config" type="application/json">{"emailjs":{"publicKey":"GBk_Bz7_Q8cZU6TcT","serviceId":"service_hzaatpy","templateId":"template_ih5vxot","to":"jobs@simohakim.com"},"errName":"Entrez votre nom complet","errEmail":"Entrez une adresse courriel valide","errMessage":"Quelques mots de plus, svp","toastFix":"Corrigez les champs en surbrillance","toastSent":"Message envoyé — merci !","toastFail":"Échec de l’envoi. Écrivez à jobs@simohakim.com.","send":"Envoyer","sending":"Envoi…","themeDark":"Passer au thème sombre","themeLight":"Passer au thème clair","subjectFallback":"Contact — simohakim.com"}</script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
   </body>
 </html>

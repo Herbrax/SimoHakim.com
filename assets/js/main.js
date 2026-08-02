@@ -1,1 +1,258 @@
-const _0x1782c7=_0x558f;(function(_0x334e6b,_0x671c96){const _0x363fac=_0x558f,_0x5867e6=_0x334e6b();while(!![]){try{const _0x31851c=parseInt(_0x363fac(0x1b4))/0x1+-parseInt(_0x363fac(0x1b8))/0x2+parseInt(_0x363fac(0x1c4))/0x3*(-parseInt(_0x363fac(0x1e0))/0x4)+parseInt(_0x363fac(0x1be))/0x5+-parseInt(_0x363fac(0x1bb))/0x6+-parseInt(_0x363fac(0x1ae))/0x7+-parseInt(_0x363fac(0x1d8))/0x8*(-parseInt(_0x363fac(0x1a7))/0x9);if(_0x31851c===_0x671c96)break;else _0x5867e6['push'](_0x5867e6['shift']());}catch(_0x406fd9){_0x5867e6['push'](_0x5867e6['shift']());}}}(_0x58fb,0x8be7d));const navMenu=document['getElementById'](_0x1782c7(0x1e6)),navToggle=document[_0x1782c7(0x1aa)](_0x1782c7(0x1b0)),navClose=document[_0x1782c7(0x1aa)](_0x1782c7(0x1ea));navToggle&&navToggle[_0x1782c7(0x1e7)](_0x1782c7(0x1e2),()=>{const _0xef2fe1=_0x1782c7;navMenu['classList'][_0xef2fe1(0x1a9)](_0xef2fe1(0x1d1));});navClose&&navClose[_0x1782c7(0x1e7)]('click',()=>{const _0x4036ee=_0x1782c7;navMenu[_0x4036ee(0x1e5)][_0x4036ee(0x1ce)]('show-menu');});const navLink=document['querySelectorAll']('.nav__link');function linkAction(){const _0x4545a0=_0x1782c7,_0x5ca68c=document['getElementById'](_0x4545a0(0x1e6));_0x5ca68c[_0x4545a0(0x1e5)]['remove'](_0x4545a0(0x1d1));}navLink[_0x1782c7(0x1db)](_0x34b10d=>_0x34b10d[_0x1782c7(0x1e7)](_0x1782c7(0x1e2),linkAction));let swiperPaper=new Swiper(_0x1782c7(0x1c2),{'cssMode':!![],'loop':!![],'navigation':{'nextEl':_0x1782c7(0x1c8),'prevEl':_0x1782c7(0x1c9)},'pagination':{'el':_0x1782c7(0x1e3),'clickable':!![]}});const sections=document[_0x1782c7(0x1b6)](_0x1782c7(0x1cc));function scrollHeader(){const _0x12a569=_0x1782c7,_0x3164ce=document[_0x12a569(0x1aa)](_0x12a569(0x1dc));if(this[_0x12a569(0x1cf)]>=0x50)_0x3164ce['classList'][_0x12a569(0x1a9)](_0x12a569(0x1cb));else _0x3164ce[_0x12a569(0x1e5)][_0x12a569(0x1ce)](_0x12a569(0x1cb));}window['addEventListener'](_0x1782c7(0x1e9),scrollHeader);function scrollUp(){const _0xe621a=_0x1782c7,_0x239b47=document[_0xe621a(0x1aa)](_0xe621a(0x1c5));if(this[_0xe621a(0x1cf)]>=0x230)_0x239b47[_0xe621a(0x1e5)][_0xe621a(0x1a9)](_0xe621a(0x1ac));else _0x239b47[_0xe621a(0x1e5)]['remove'](_0xe621a(0x1ac));}function scrollHero(){const _0x4c32c4=_0x1782c7,_0x2d1580=window[_0x4c32c4(0x1cf)],_0x3da96c=document['querySelector'](_0x4c32c4(0x1bd)),_0x190d63=document['querySelector'](_0x4c32c4(0x1cd));if(_0x3da96c&&_0x190d63){const _0x3b1eb0=_0x3da96c[_0x4c32c4(0x1df)],_0x52b53a=Math['max'](0x1-Math['min'](_0x2d1580/_0x3b1eb0,0x1),0.06);_0x3da96c[_0x4c32c4(0x1d3)]['opacity']=_0x52b53a,_0x2d1580>_0x3b1eb0?_0x190d63[_0x4c32c4(0x1d3)]['position']='fixed':_0x190d63[_0x4c32c4(0x1d3)][_0x4c32c4(0x1de)]=_0x4c32c4(0x1c7);}}window['addEventListener']('scroll',scrollHero);const themeButton=document[_0x1782c7(0x1aa)](_0x1782c7(0x1ba)),darkTheme=_0x1782c7(0x1d9),iconTheme=_0x1782c7(0x1d4),selectedTheme=localStorage[_0x1782c7(0x1c1)](_0x1782c7(0x1c3)),selectedIcon=localStorage[_0x1782c7(0x1c1)]('selected-icon'),getCurrentTheme=()=>document[_0x1782c7(0x1b5)]['classList']['contains'](darkTheme)?'dark':_0x1782c7(0x1af),getCurrentIcon=()=>themeButton[_0x1782c7(0x1e5)][_0x1782c7(0x1e1)](iconTheme)?_0x1782c7(0x1d6):_0x1782c7(0x1d4);selectedTheme&&(document['body'][_0x1782c7(0x1e5)][selectedTheme===_0x1782c7(0x1b3)?_0x1782c7(0x1a9):_0x1782c7(0x1ce)](darkTheme),themeButton['classList'][selectedIcon===_0x1782c7(0x1d6)?_0x1782c7(0x1a9):'remove'](iconTheme));themeButton[_0x1782c7(0x1e7)](_0x1782c7(0x1e2),()=>{const _0x5cef7e=_0x1782c7;document[_0x5cef7e(0x1b5)][_0x5cef7e(0x1e5)]['toggle'](darkTheme),themeButton[_0x5cef7e(0x1e5)][_0x5cef7e(0x1b7)](iconTheme),localStorage[_0x5cef7e(0x1ad)](_0x5cef7e(0x1c3),getCurrentTheme()),localStorage[_0x5cef7e(0x1ad)]('selected-icon',getCurrentIcon());});var nameError=document[_0x1782c7(0x1aa)]('name-error'),emailError=document['getElementById']('email-error'),subjectError=document[_0x1782c7(0x1aa)](_0x1782c7(0x1d2)),messageError=document[_0x1782c7(0x1aa)]('message-error');function sanitizeInput(_0x3f4172){const _0x1a22fd=_0x1782c7;return _0x3f4172[_0x1a22fd(0x1e8)](/[<>&"']/g,'');}function validateField(_0x1e6289,_0x39cefa,_0x1c58d5,_0x1c5b9a,_0x258eb2){const _0x569d25=_0x1782c7;var _0x9ed4a=sanitizeInput(_0x1e6289[_0x569d25(0x1c0)][_0x569d25(0x1d5)]());if(_0x9ed4a[_0x569d25(0x1ab)]===0x0)return _0x39cefa['innerHTML']='Empty\x20Field!',![];if(_0x1c58d5&&!_0x9ed4a['match'](_0x1c58d5))return _0x39cefa[_0x569d25(0x1e4)]=_0x258eb2,![];return _0x39cefa[_0x569d25(0x1e4)]='<i\x20class=\x22uil\x20uil-check-circle\x20projects__modal-icon\x22></i>',!![];}function _0x58fb(){const _0x4c421d=['innerHTML','classList','nav-menu','addEventListener','replace','scroll','nav-close','2467773EVOCkU','template_ih5vxot','add','getElementById','length','show-scroll','setItem','208733JYnUuK','light','nav-toggle','Enter\x20a\x20valid\x20full\x20name!','fullName','dark','176883kApPUo','body','querySelectorAll','toggle','312882umPncn','Enter\x20a\x20valid\x20subject!','theme-button','5722932nNJVEx','message','.hero','5476755WAaCQQ','email_id','value','getItem','.paper__container','selected-theme','3897DgRNbO','scroll-up','test','relative','.swiper-button-next','.swiper-button-prev','Please\x20fix\x20the\x20errors\x20to\x20send\x20a\x20message!','scroll-header','section[data-id]','.scroll-header','remove','scrollY','service_hzaatpy','show-menu','subject-error','style','uil-sun','trim','uil-moon','Your\x20message\x20has\x20been\x20sent\x20successfully!','40LkteoM','dark-theme','subject','forEach','header','Empty\x20Field!','position','offsetHeight','2864XwalAY','contains','click','.swiper-pagination'];_0x58fb=function(){return _0x4c421d;};return _0x58fb();}function _0x558f(_0x1db8fd,_0x2793b2){const _0x58fbed=_0x58fb();return _0x558f=function(_0x558fbf,_0x15ae89){_0x558fbf=_0x558fbf-0x1a7;let _0x13998a=_0x58fbed[_0x558fbf];return _0x13998a;},_0x558f(_0x1db8fd,_0x2793b2);}function validateName(){const _0x19c5b5=_0x1782c7;var _0x3296e8=document[_0x19c5b5(0x1aa)](_0x19c5b5(0x1b2)),_0x3229bc=/^[a-zA-Z\s'-]+$/;return validateField(_0x3296e8,nameError,_0x3229bc,_0x19c5b5(0x1dd),_0x19c5b5(0x1b1));}function validateSubject(){const _0xbee8bb=_0x1782c7;var _0x1dab67=document['getElementById'](_0xbee8bb(0x1da)),_0x38ede7=/^[a-zA-Z\s'-]+$/;return validateField(_0x1dab67,subjectError,_0x38ede7,'Empty\x20Field!',_0xbee8bb(0x1b9));}function validateEmail(){const _0x561251=_0x1782c7;var _0x424a92=document[_0x561251(0x1aa)](_0x561251(0x1bf)),_0x4c4120=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;return validateField(_0x424a92,emailError,_0x4c4120,_0x561251(0x1dd),'Invalid\x20email!');}function validateMessage(){const _0x53a16e=_0x1782c7;var _0x31e18b=document['getElementById'](_0x53a16e(0x1bc)),_0x3d4609=null;return validateField(_0x31e18b,messageError,_0x3d4609,_0x53a16e(0x1dd),null);}function SendMail(){const _0x3366ae=_0x1782c7;console['log'](_0x3366ae(0x1c6));if(!validateName()||!validateEmail()||!validateMessage())return alert(_0x3366ae(0x1ca)),![];var _0x933dcc={'from_name':document[_0x3366ae(0x1aa)](_0x3366ae(0x1b2))['value'],'email_id':document[_0x3366ae(0x1aa)](_0x3366ae(0x1bf))['value'],'subject':document['getElementById'](_0x3366ae(0x1da))[_0x3366ae(0x1c0)],'message':document[_0x3366ae(0x1aa)]('message')[_0x3366ae(0x1c0)]};emailjs['send'](_0x3366ae(0x1d0),_0x3366ae(0x1a8),_0x933dcc)['then'](function(_0x5aadee){const _0x126fb6=_0x3366ae;alert(_0x126fb6(0x1d7));});}
+/* =============================================================================
+   simohakim.com — interactions
+   Vanilla, dependency-free (EmailJS is the only external, and it degrades
+   gracefully to a mailto: link if the CDN is blocked).
+   ========================================================================== */
+(() => {
+  'use strict';
+
+  const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* UI strings and mail credentials for this page, emitted by the generator. */
+  const T = (() => {
+    try {
+      return JSON.parse($('#site-config').textContent);
+    } catch (e) {
+      return {};
+    }
+  })();
+
+  /* --------------------------------------------------------- language menu */
+  const langWrap = $('#langmenu');
+  const langBtn = $('#lang-btn');
+
+  if (langWrap && langBtn) {
+    const setLangMenu = (open) => {
+      langWrap.classList.toggle('is-open', open);
+      langBtn.setAttribute('aria-expanded', String(open));
+    };
+
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setLangMenu(!langWrap.classList.contains('is-open'));
+    });
+    document.addEventListener('click', (e) => {
+      if (!langWrap.contains(e.target)) setLangMenu(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setLangMenu(false);
+    });
+
+    // Choosing a language is an explicit decision: store it in a cookie for a
+    // year so every later visit — including to the bare domain — lands there.
+    $$('.langmenu__item').forEach((link) =>
+      link.addEventListener('click', () => {
+        const secure = location.protocol === 'https:' ? '; Secure' : '';
+        document.cookie =
+          `lang=${encodeURIComponent(link.dataset.lang)}; path=/; max-age=31536000; SameSite=Lax${secure}`;
+      })
+    );
+  }
+
+  /* ------------------------------------------------------------- mobile nav */
+  const menu = $('#nav-menu');
+  const toggle = $('#nav-toggle');
+  const closeBtn = $('#nav-close');
+
+  const setMenu = (open) => {
+    menu.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  toggle?.addEventListener('click', () => setMenu(true));
+  closeBtn?.addEventListener('click', () => setMenu(false));
+  $$('.nav__link').forEach((l) => l.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) setMenu(false);
+  });
+
+  /* ----------------------------------------------------------------- theme */
+  const themeBtn = $('#theme-btn');
+  const root = document.documentElement;
+
+  /** The hero for a theme is only fetched the first time that theme is shown. */
+  const loadHeroFor = (theme) => {
+    const img = $(`[data-hero="${theme}"]`);
+    if (img && !img.src) {
+      img.srcset = img.dataset.srcset;
+      img.src = img.dataset.src;
+    }
+  };
+
+  const syncThemeButton = () => {
+    const dark = root.dataset.theme === 'dark';
+    themeBtn?.setAttribute('aria-pressed', String(dark));
+    themeBtn?.setAttribute('aria-label', dark ? T.themeLight : T.themeDark);
+  };
+  syncThemeButton();
+
+  themeBtn?.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    loadHeroFor(root.dataset.theme);
+    try {
+      localStorage.setItem('theme', root.dataset.theme);
+    } catch (e) {
+      /* private mode — theme just won't persist */
+    }
+    syncThemeButton();
+  });
+
+  /* --------------------------------------------- scroll: header, progress, spy */
+  const header = $('#header');
+  const progress = $('#progress');
+  const toTop = $('#to-top');
+  const navLinks = $$('[data-nav]');
+  const sections = $$('section[data-section]');
+
+  /* The wallpaper stays pinned; it just fades fast, bottoming out at a trace
+     so the shape stays readable behind the rest of the page. */
+  const BACKDROP_MIN = 0.05;
+  const BACKDROP_FADE = 0.7; // fully faded this far into the first viewport
+
+  let ticking = false;
+  const onScroll = () => {
+    const y = window.scrollY;
+
+    const fadeOver = Math.max(window.innerHeight * BACKDROP_FADE, 1);
+    const backdrop = Math.max(1 - y / fadeOver, BACKDROP_MIN);
+    root.style.setProperty('--backdrop-o', backdrop.toFixed(3));
+
+    header.classList.toggle('is-stuck', y > window.innerHeight * 0.86);
+    toTop.classList.toggle('is-on', y > window.innerHeight);
+
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.setProperty('--p', max > 0 ? (y / max).toFixed(4) : 0);
+
+    // section spy — the section covering the upper third of the viewport wins
+    const line = y + window.innerHeight * 0.33;
+    let current = '';
+    for (const s of sections) if (s.offsetTop <= line) current = s.dataset.section;
+    navLinks.forEach((l) => l.classList.toggle('is-active', l.dataset.nav === current));
+
+    ticking = false;
+  };
+
+  addEventListener(
+    'scroll',
+    () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(onScroll);
+      }
+    },
+    { passive: true }
+  );
+  onScroll();
+
+  /* --------------------------------------------------------- scroll reveal */
+  const revealables = $$('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealables.forEach((el) => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      },
+      { rootMargin: '0px 0px -12% 0px', threshold: 0.12 }
+    );
+    revealables.forEach((el) => io.observe(el));
+  }
+
+  /* ----------------------------------------------------------------- toast */
+  const toastEl = $('#toast');
+  let toastTimer;
+  const toast = (msg, kind = 'ok') => {
+    clearTimeout(toastTimer);
+    toastEl.textContent = msg;
+    toastEl.dataset.kind = kind;
+    toastEl.classList.add('is-on');
+    toastTimer = setTimeout(() => toastEl.classList.remove('is-on'), 4500);
+  };
+
+  /* ---------------------------------------------------------- contact form */
+  /* The generator only emits the form when data.json carries a full set of
+     EmailJS ids, so reaching here means EMAILJS is populated. */
+  const EMAILJS = T.emailjs || {};
+
+  const form = $('#contact-form');
+  if (form) {
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    const rules = {
+      fullName: (v) => (v.trim().length >= 2 ? '' : T.errName),
+      email_id: (v) => (emailRe.test(v.trim()) ? '' : T.errEmail),
+      message: (v) => (v.trim().length >= 10 ? '' : T.errMessage),
+    };
+
+    const validate = (id) => {
+      const input = $(`#${id}`);
+      const error = rules[id](input.value);
+      $(`#${id}-error`).textContent = error;
+      input.closest('.field').classList.toggle('has-error', Boolean(error));
+      input.setAttribute('aria-invalid', String(Boolean(error)));
+      return !error;
+    };
+
+    Object.keys(rules).forEach((id) => {
+      const input = $(`#${id}`);
+      // Validate on blur, then live-correct once the field has been touched.
+      input.addEventListener('blur', () => validate(id));
+      input.addEventListener('input', () => {
+        if (input.closest('.field').classList.contains('has-error')) validate(id);
+      });
+    });
+
+    const sendBtn = $('#send-btn');
+    const sendLabel = sendBtn.querySelector('span');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const ok = Object.keys(rules).map(validate).every(Boolean);
+      if (!ok) {
+        toast(T.toastFix, 'error');
+        return;
+      }
+
+      const params = {
+        from_name: $('#fullName').value.trim(),
+        email_id: $('#email_id').value.trim(),
+        subject: $('#subject').value.trim() || T.subjectFallback,
+        message: $('#message').value.trim(),
+      };
+
+      if (typeof emailjs === 'undefined') {
+        // CDN blocked or offline — hand the message to the user's mail client.
+        location.href =
+          `mailto:${EMAILJS.to}?subject=${encodeURIComponent(params.subject)}` +
+          `&body=${encodeURIComponent(`${params.message}\n\n— ${params.from_name} (${params.email_id})`)}`;
+        return;
+      }
+
+      sendBtn.disabled = true;
+      sendLabel.textContent = T.sending;
+      try {
+        emailjs.init({ publicKey: EMAILJS.publicKey });
+        await emailjs.send(EMAILJS.serviceId, EMAILJS.templateId, params);
+        form.reset();
+        toast(T.toastSent);
+      } catch (err) {
+        console.error(err);
+        toast(T.toastFail, 'error');
+      } finally {
+        sendBtn.disabled = false;
+        sendLabel.textContent = T.send;
+      }
+    });
+  }
+
+  /* --------------------------------------------------------------- niceties */
+  $('#year') && ($('#year').textContent = new Date().getFullYear());
+})();

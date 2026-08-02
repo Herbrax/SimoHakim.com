@@ -1,194 +1,346 @@
 {
-    "personalInfo": {
-      "surname": "Simo",
-      "lastname":"Hakim",
-      "title": "Computer Science Graduate - Software Engineer Junior",
-      "languages": ["English", "French"],
-      "contact": {
-        "phone": "+1 (438) 700-4770",
-        "email": "jobs@simohakim.com",
-        "location": "Montreal, Canada",
-        "address": "4390 Grand Boulevard, unit 302, H4B 2X8, Montreal, QC, Canada"
-      }
+  "defaultLanguage": "en",
+  "languages": ["en", "fr"],
+  "personalInfo": {
+    "surname": "Simo",
+    "lastname": "Hakim",
+    "title": {
+      "en": "Computer Science Graduate - Software Engineer Junior",
+      "fr": "Diplômé en informatique - Ingénieur logiciel junior"
     },
-    "socialLinks": {
-      "linkedin": "https://www.linkedin.com/in/simo-hakim-b7a14413b/",
-      "github": "https://github.com/Herbrax",
-      "twitter": "https://twitter.com/herbrax"
+    "availability": {
+      "en": "",
+      "fr": ""
     },
-    "home": {
-      "description": "Newly graduated with a Computer Science degree from the University of Montreal, I'm on the lookout for Software Engineering positions where I can further build my stack and dive into real-world projects."
+    "languages": {
+      "en": "English, French",
+      "fr": "Anglais, français"
     },
-    "about": {
-      "description": "As Arthur C. Clarke once said, 'Any sufficiently advanced technology is indistinguishable from magic.' This perspective shapes my approach as I near the completion of my B.Sc. in Computer Science from the University of Montreal. After a rich experience as a QA Team Lead at LXT AI, I am now seeking new horizons to grow, learn, and push on that vision of mine."
-    },
-    "resumeSkills": {
-      "programming": ["Python", "Java", "C", "C#", "Lua", "HTML/CSS", "Javascript", "Typescript", "Julia"],
-      "data": ["SQL", "Firebase", "Tensorflow", "PyTorch", "Pandas", "Numpy"],
-      "miscellaneous": ["Git", "Android Studio", "Arduino/ESP32", "Raspberry Pi", "SketchUp", "Photoshop", "LaTeX", "Agile"]
-    },
-    "skills": [
-      {
-        "category": "Programming Skills",
-          "skills": [
-            {"name": "C#", "level": "Advanced"},
-            {"name": "Java", "level": "Advanced"},
-            {"name": "Python", "level": "Advanced"},
-            {"name": "SQL", "level": "Advanced"},
-            {"name": "HTML/CSS", "level": "Intermediate"},
-            {"name": "Javascript", "level": "Intermediate"},
-            {"name": "React", "level": "Intermediate"},
-            {"name": "Flutter", "level": "Beginner"},
-            {"name": "Julia", "level": "Beginner"},
-            {"name": "KDB+", "level": "Beginner"}
-          ]
-        },
-      {
-        "category": "Technologies",
-        "skills": [
-          {"name": "Git", "level": "Advanced"},
-          {"name": "MS Office", "level": "Advanced"},
-          {"name": "Latex", "level": "Advanced"},
-          {"name": "Azure", "level": "Advanced"},
-          {"name": "Oracle ADB", "level": "Advanced"},
-          {"name": "Android Studio", "level": "Intermediate"},
-          {"name": "Arduino/ESP32", "level": "Intermediate"},
-          {"name": "PyTorch/Tenserflow", "level": "Intermediate"},
-          {"name": "AWS", "level": "Beginner"},
-          {"name": "Firebase", "level": "Beginner"}
-        ]
+    "contact": {
+      "phone": "+1 (438) 700-4770",
+      "email": "jobs@simohakim.com",
+      "location": {
+        "en": "Montreal, Canada",
+        "fr": "Montréal, Canada"
+      },
+      "address": {
+        "en": "4390 Grand Boulevard, unit 302, H4B 2X8, Montreal, QC, Canada",
+        "fr": "4390 Grand Boulevard, app. 302, H4B 2X8, Montréal, QC, Canada"
       }
-    ],
-    "education": [
-      {
-        "degree": "B.Sc.",
-        "field": "Computer Sciences",
-        "institution": "University of Montreal",
-        "year": "2020 - 2024",
-        "details": "Currently pursuing, with an anticipated completion in April 2024.",
-        "showInResume":"Y"
-      },
-      {
-        "degree": "Certificate",
-        "field": "Market Finance",
-        "institution": "HEC Montreal",
-        "year": "2025 - 2026",
-        "details": "Ongoing",
-        "showInResume":"Y"
-      }
-    ],
-    "workExperience": [
-      {
-        "position": "Data Engineer",
-        "company": "Desjardins General Insurance Group, Montreal, QC",
-        "years": "Apr 2025 - Present",
-        "details": "Contributed to data engineering efforts supporting insurance solutions and operational continuity.",
-        "resumeDetails": "Evolved the company’s Denodo data virtualization platform by extending data models, ensuring robust support for the analytical requirements of both auto and home insurance solutions. Performed critical data extractions on our Hive Database, enabling Business Intelligence teams to access accurate and timely datasets for reporting and analysis. Provided operational support during off-hours migration periods, ensuring business continuity and rapid resolution of critical production issues.",
-        "showInResume": "Y"
-      },
-      {
-        "position": "Software Engineer Intern - .NET/SQL",
-        "company": "Desjardins Global Asset Management, Montreal, QC",
-        "years": "Sept 2024 - Apr 2025",
-        "details": "Developed tools and supported critical application migrations for asset management operations.",
-        "resumeDetails": "Created and improved tools and alerts to assist portfolio managers, compliance teams, and the data loading team. Participated in the migration of mission-critical applications to .NET 8, refactoring legacy code and implementing a shared library to enhance scalability and maintainability. Engineered a robust file transfer system by replacing legacy SFTP polling with an on-demand architecture, improving reliability and reducing file server load by 80%.",
-        "showInResume": "Y"
-      },
-      {
-        "position": "QA Data Entry Lead",
-        "company": "LXT AI, Montreal, QC",
-        "years": "Feb 2022 - Sept 2023",
-        "details": "Led a team ensuring high-quality data entry for large language model training.",
-        "resumeDetails": "Oversaw a team in mass data entry for training large language models, ensuring data quality. Developed and implemented tools and trainings that reduced error rates by 20% and resulted in improved efficiency and accuracy.",
-        "showInResume": "Y"
-      },
-      {
-        "position": "Deputy Internal VP + Graduating Students Representative",
-        "company": "AEDIROUM (Student Association), Montreal, QC",
-        "years": "Sept 2023 - Sept 2024",
-        "details": "Engaged in student representation and committee advocacy for student needs.",
-        "resumeDetails": "Engaged in my student association as the representative for graduating students and as a member of the Representation Committee, contributing to the advocacy and support of student interests and needs.",
-        "showInResume": "Y"
-      }
-    ],
-    "testimonials": [
-      {
-        "name": "Mr. Lorem Ipsum",
-        "role": "Canada Computers, Manager",
-        "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": "assets/img/default-woman.png"
-      },
-      {
-        "name": "Dr. Tempor Ut Labore",
-        "role": "LXT AI, Team Lead",
-        "testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.",
-        "image": "assets/img/default-man.png"
-      }
-    ],
-    "projects": [
-      {
-        "name": "Mobideal.ca",
-        "description": "Phone pricing comparator across Best Buy, Costco Mobile, and Walmart Wireless. Architecture includes an Oracle Autonomous Database and a Python script running on an Oracle Cloud VM that scrapes APIs every 8 hours to update the database. The frontend is built with React and connects to the Oracle DB through its own API."
-      },
-      {
-        "name": "ResumeTurbo.com",
-        "description": "Dynamic online resume generator. Implemented SwiftLaTeX, a WebAssembly LaTeX compiler, for real-time in-browser LaTeX rendering, and Mozilla’s PDF.js for cross-platform PDF viewing."
-      },
-      {
-        "name": "SimoHakim.com + Generator",
-        "description": "Python tool to generate portfolio websites from a single JSON file. Example implementation: SimoHakim.com, my personal website."
-      },
-      {
-        "name": "Pairings.cloud",
-        "description": "Web application for ranking and pairing players in large Swiss-system tournaments. Built with React for the Participants site and Electron for the Tournament Organizer companion app, leveraging Firebase as the backend database."
-      },
-      {
-        "name": "ASCII Sign Language Classification (Kaggle)",
-        "description": "Achieved 1st place in a Kaggle competition focused on classifying sign language images, using Random Forest and Convolutional Neural Networks (CNN) enhanced with XGBoost."
-      },
-      {
-        "name": "Classification of Extreme Weather Events (Kaggle)",
-        "description": "Developed models for detecting and classifying extreme weather events using climate data. Employed Logistic Regression, Linear SVM, and XGBoost."
-      },
-      {
-        "name": "Solar Flare Detection via Radio Blackouts Phenomenon",
-        "description": "Building a machine learning model to locally detect solar flares in real time by monitoring radio frequencies (5–25 MHz) via RTL-SDR hardware."
-      },
-      {
-        "name": "AbraCarta - Shopify App",
-        "description": "Shopify-integrated platform that helps card shop owners manage live inventory, automate updates, and display pricing in storefronts. Architected with a .NET backend, React/Remix frontend, RESTful APIs for internal operations, and GraphQL for Shopify integration."
-      }
-    ],
-    "colors": {
-        "light": {
-            "first-color": "#022f66",
-            "first-color-light": "#8da7c7",
-            "title-color": "#111111",
-            "text-color": "#737373",
-            "input-color": "#e6f1ff",
-            "body-color": "#ffffff",
-            "container-color": "#fafafa",
-            "scroll-bar-color": "#e6e6e6",
-            "scroll-thumb-color": "#cccccc",
-            "hero-title": "#9fb1b6",
-            "hero-subtitle": "#9bb1b3",
-            "hero-bold": "#435052",
-            "hero-icon": "#abc3dc"
-        },
-        "dark": {
-            "first-color": "#fe7031",
-            "first-color-light": "#dbb69c",
-            "title-color": "#f2f2f2",
-            "text-color": "#656c76",
-            "input-color": "#272727",
-            "body-color": "#121212",
-            "container-color": "#272727",
-            "scroll-bar-color": "#424242",
-            "scroll-thumb-color": "#595959",
-            "hero-title": "#f39c12",
-            "hero-subtitle": "#ffffff",
-            "hero-bold": "#ffffff",
-            "hero-icon": "#ff7c11"
-        }
     }
+  },
+  "emailjs": {
+    "publicKey": "GBk_Bz7_Q8cZU6TcT",
+    "serviceId": "service_hzaatpy",
+    "templateId": "template_ih5vxot"
+  },
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/simo-hakim-b7a14413b/",
+    "github": "https://github.com/Herbrax",
+    "twitter": "https://twitter.com/herbrax"
+  },
+  "home": {
+    "description": {
+      "en": "Outside of work I'm a CFA candidate preparing for the Level I exam, which is also what took me to the certificate in market finance at HEC Montreal. The rest of my time goes to a steady stream of side projects — pricing comparators, tournament software, a solar flare detector — mostly as an excuse to learn something new.",
+      "fr": "En dehors du travail, je suis candidat au CFA et je prépare l'examen de niveau I, ce qui m'a d'ailleurs mené au certificat en finance de marché à HEC Montréal. Le reste de mon temps va à un flux constant de projets personnels — comparateurs de prix, logiciels de tournoi, un détecteur d'éruptions solaires — surtout comme prétexte pour apprendre quelque chose de neuf."
+    }
+  },
+  "about": {
+    "description": {
+      "en": "As Arthur C. Clarke once said, 'Any sufficiently advanced technology is indistinguishable from magic.' That idea still shapes how I approach the work. Since finishing my B.Sc. in Computer Science at the University of Montreal, I've spent the start of my career at Desjardins, a well-known Canadian financial institution: first building tools and migrating mission-critical applications in asset management, then engineering data platforms for auto and home insurance, and today maintaining the cloud-native integration APIs and .NET backends that internal teams rely on every day.",
+      "fr": "Comme le disait Arthur C. Clarke, « toute technologie suffisamment avancée est indiscernable de la magie ». Cette idée façonne encore ma façon d'aborder le métier. Depuis la fin de mon B.Sc. en informatique à l'Université de Montréal, j'ai commencé ma carrière chez Desjardins, une institution financière canadienne bien connue : d'abord en développant des outils et en migrant des applications critiques en gestion d'actifs, puis en bâtissant des plateformes de données pour l'assurance auto et habitation, et aujourd'hui en maintenant les APIs d'intégration infonuagiques et les backends .NET dont les équipes internes dépendent au quotidien."
+    }
+  },
+  "resumeSummary": {
+    "en": "Software engineer with hands-on experience in full stack development, data engineering, and enterprise systems in cloud environments. Driven by solving complex problems at the intersection of technology and science, I seek roles where technical rigor and innovation have a concrete impact.",
+    "fr": "Ingénieur logiciel avec une expérience concrète en développement full stack, en ingénierie de données et en systèmes d'entreprise en environnement infonuagique. Motivé par la résolution de problèmes complexes à la croisée de la technologie et de la science, je recherche des rôles où la rigueur technique et l'innovation ont un impact tangible."
+  },
+  "resumeSkills": {
+    "programming": ["Python", "Java", "C", "C#", "Lua", "HTML/CSS", "Javascript", "Typescript", "Julia"],
+    "data": ["SQL", "Firebase", "Tensorflow", "PyTorch", "Pandas", "Numpy"],
+    "miscellaneous": ["Git", "Android Studio", "Arduino/ESP32", "Raspberry Pi", "SketchUp", "Photoshop", "LaTeX", "Agile"]
+  },
+  "skills": [
+    {
+      "category": {
+        "en": "Programming Skills",
+        "fr": "Programmation"
+      },
+      "skills": [
+        { "name": "C#", "level": "Advanced" },
+        { "name": "Java", "level": "Advanced" },
+        { "name": "Python", "level": "Advanced" },
+        { "name": "SQL", "level": "Advanced" },
+        { "name": "HTML/CSS", "level": "Intermediate" },
+        { "name": "Javascript", "level": "Intermediate" },
+        { "name": "React", "level": "Intermediate" },
+        { "name": "Flutter", "level": "Beginner" },
+        { "name": "Julia", "level": "Beginner" },
+        { "name": "KDB+", "level": "Beginner" }
+      ]
+    },
+    {
+      "category": {
+        "en": "Technologies",
+        "fr": "Technologies"
+      },
+      "skills": [
+        { "name": "Git", "level": "Advanced" },
+        { "name": "MS Office", "level": "Advanced" },
+        { "name": "Latex", "level": "Advanced" },
+        { "name": "Azure", "level": "Advanced" },
+        { "name": "Oracle ADB", "level": "Advanced" },
+        { "name": "Android Studio", "level": "Intermediate" },
+        { "name": "Arduino/ESP32", "level": "Intermediate" },
+        { "name": "PyTorch/Tenserflow", "level": "Intermediate" },
+        { "name": "AWS", "level": "Beginner" },
+        { "name": "Firebase", "level": "Beginner" }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": { "en": "B.Sc.", "fr": "B.Sc." },
+      "field": { "en": "Computer Sciences", "fr": "Informatique" },
+      "institution": { "en": "University of Montreal", "fr": "Université de Montréal" },
+      "year": "2020 - 2024",
+      "details": { "en": "", "fr": "" },
+      "location": { "en": "Montreal, QC", "fr": "Montréal, QC" },
+      "showInResume": "Y"
+    },
+    {
+      "degree": { "en": "Certificate", "fr": "Certificat" },
+      "field": { "en": "Market Finance", "fr": "Finance de marché" },
+      "institution": "HEC Montreal",
+      "year": "2025 - 2026",
+      "details": { "en": "Ongoing", "fr": "En cours" },
+      "location": { "en": "Montreal, QC", "fr": "Montréal, QC" },
+      "showInResume": "Y"
+    }
+  ],
+  "workExperience": [
+    {
+      "position": { "en": "Full Stack Engineer", "fr": "Ingénieur full stack" },
+      "company": {
+        "en": "Mouvement Desjardins - Direction Executive Solutions, Montreal, QC",
+        "fr": "Mouvement Desjardins - Direction Solutions Exécutives, Montréal, QC"
+      },
+      "years": "Jan 2026 - Present",
+      "details": {
+        "en": "Maintains critical cloud-native integration APIs and builds .NET backends for internal finance and operations applications.",
+        "fr": "Maintient les APIs d'intégration infonuagiques critiques et développe les backends .NET des applications internes de finance et d'opérations."
+      },
+      "resumeDetails": {
+        "en": "Maintains and evolves critical cloud-native integration APIs connecting the Mouvement's internal systems, guaranteeing their availability and resilience in production. Runs dependency audits and drives the update of outdated packages across applications, reducing the vulnerability surface and keeping environments compliant. Develops the .NET backend of internal applications alongside the finance and operations teams, translating complex business needs into robust, maintainable solutions.",
+        "fr": "Maintient et fait évoluer des APIs critiques d'intégration Native Cloud assurant la communication entre les systèmes internes du Mouvement, en garantissant leur disponibilité et leur résilience en production. Réalise des audits de dépendances et pilote la mise à jour des packages obsolètes à travers les applications, réduisant la surface de vulnérabilités et assurant la conformité des environnements. Développe le backend .NET d'applications internes en collaboration avec les équipes finance et opérations, en traduisant des besoins métiers complexes en solutions techniques robustes et maintenables."
+      },
+      "showInResume": "Y"
+    },
+    {
+      "position": { "en": "Data Engineer", "fr": "Ingénieur de données" },
+      "company": {
+        "en": "Desjardins General Insurance Group, Montreal, QC",
+        "fr": "Desjardins Groupe d'Assurances Générales, Montréal, QC"
+      },
+      "years": "Apr 2025 - Jan 2026",
+      "details": {
+        "en": "Contributed to data engineering efforts supporting insurance solutions and operational continuity.",
+        "fr": "A contribué aux travaux d'ingénierie de données soutenant les solutions d'assurance et la continuité des opérations."
+      },
+      "resumeDetails": {
+        "en": "Evolved the company's Denodo data virtualization platform by extending data models, ensuring robust support for the analytical requirements of both auto and home insurance solutions. Performed critical data extractions on our Hive Database, enabling Business Intelligence teams to access accurate and timely datasets for reporting and analysis. Provided operational support during off-hours migration periods, ensuring business continuity and rapid resolution of critical production issues.",
+        "fr": "A fait évoluer la plateforme de virtualisation de données Denodo de l'entreprise en étendant les modèles de données, assurant un soutien robuste aux besoins analytiques des solutions d'assurance auto et habitation. A réalisé des extractions critiques de données à partir de la base Hive, permettant aux équipes BI d'accéder à des jeux de données fiables et à jour pour l'analyse et le reporting. A offert un soutien opérationnel lors de périodes de migration en dehors des heures ouvrables, garantissant la continuité des activités et la résolution rapide des incidents en production."
+      },
+      "showInResume": "Y"
+    },
+    {
+      "position": {
+        "en": "Software Engineer Intern - .NET/SQL",
+        "fr": "Stagiaire en génie logiciel - .NET/SQL"
+      },
+      "company": {
+        "en": "Desjardins Global Asset Management, Montreal, QC",
+        "fr": "Gestion mondiale d'actifs Desjardins, Montréal, QC"
+      },
+      "years": "Sept 2024 - Apr 2025",
+      "details": {
+        "en": "Developed tools and supported critical application migrations for asset management operations.",
+        "fr": "A développé des outils et soutenu des migrations d'applications critiques pour les opérations de gestion d'actifs."
+      },
+      "resumeDetails": {
+        "en": "Created and improved tools and alerts to assist portfolio managers, compliance teams, and the data loading team. Participated in the migration of mission-critical applications to .NET 8, refactoring legacy code and implementing a shared library to enhance scalability and maintainability. Engineered a robust file transfer system by replacing legacy SFTP polling with an on-demand architecture, improving reliability and reducing file server load by 80%.",
+        "fr": "A créé et amélioré des outils et des alertes pour appuyer les gestionnaires de portefeuille, les équipes de conformité et l'équipe de chargement de données. A participé à la migration d'applications critiques vers .NET 8, en refactorisant du code hérité et en implantant une bibliothèque partagée pour améliorer l'évolutivité et la maintenabilité. A conçu un système de transfert de fichiers robuste en remplaçant l'interrogation SFTP héritée par une architecture sur demande, améliorant la fiabilité et réduisant la charge du serveur de fichiers de 80 %."
+      },
+      "showInResume": "Y"
+    },
+    {
+      "position": { "en": "QA Data Entry Lead", "fr": "Responsable qualité - saisie de données" },
+      "company": {
+        "en": "LXT AI, Montreal, QC",
+        "fr": "LXT AI, Montréal, QC"
+      },
+      "years": "Feb 2022 - Sept 2023",
+      "details": {
+        "en": "Led a team ensuring high-quality data entry for large language model training.",
+        "fr": "A dirigé une équipe assurant une saisie de données de haute qualité pour l'entraînement de grands modèles de langage."
+      },
+      "resumeDetails": {
+        "en": "Oversaw a team in mass data entry for training large language models, ensuring data quality. Developed and implemented tools and trainings that reduced error rates by 20% and resulted in improved efficiency and accuracy.",
+        "fr": "A supervisé une équipe de saisie de données à grande échelle pour l'entraînement de grands modèles de langage, en veillant à la qualité des données. A développé et déployé des outils et des formations qui ont réduit les taux d'erreur de 20 % et amélioré l'efficacité et la précision."
+      },
+      "showInResume": "Y"
+    },
+    {
+      "position": {
+        "en": "Deputy Internal VP + Graduating Students Representative",
+        "fr": "VP interne adjoint + représentant des finissants"
+      },
+      "company": {
+        "en": "AEDIROUM (Student Association), Montreal, QC",
+        "fr": "AEDIROUM (association étudiante), Montréal, QC"
+      },
+      "years": "Sept 2023 - Sept 2024",
+      "details": {
+        "en": "Engaged in student representation and committee advocacy for student needs.",
+        "fr": "Impliqué dans la représentation étudiante et la défense des besoins des étudiants en comité."
+      },
+      "resumeDetails": {
+        "en": "Engaged in my student association as the representative for graduating students and as a member of the Representation Committee, contributing to the advocacy and support of student interests and needs.",
+        "fr": "Impliqué dans mon association étudiante à titre de représentant des finissants et de membre du comité de représentation, contribuant à la défense et au soutien des intérêts et des besoins étudiants."
+      },
+      "showInResume": "Y"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Mr. Lorem Ipsum",
+      "role": {
+        "en": "Canada Computers, Manager",
+        "fr": "Canada Computers, gestionnaire"
+      },
+      "testimonial": {
+        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "fr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "image": "assets/img/default-woman.png"
+    },
+    {
+      "name": "Dr. Tempor Ut Labore",
+      "role": {
+        "en": "LXT AI, Team Lead",
+        "fr": "LXT AI, chef d'équipe"
+      },
+      "testimonial": {
+        "en": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.",
+        "fr": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto."
+      },
+      "image": "assets/img/default-man.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mobideal.ca",
+      "link": "https://mobideal.ca",
+      "description": {
+        "en": "Phone pricing comparator across Best Buy, Costco Mobile, and Walmart Wireless. Architecture includes an Oracle Autonomous Database and a Python script running on an Oracle Cloud VM that scrapes APIs every 8 hours to update the database. The frontend is built with React and connects to the Oracle DB through its own API.",
+        "fr": "Comparateur de prix de téléphones entre Best Buy, Costco Mobile et Walmart Wireless. L'architecture repose sur une base Oracle Autonomous Database et un script Python hébergé sur une VM Oracle Cloud qui interroge les APIs des détaillants toutes les 8 heures pour mettre à jour les données. Le frontend est développé en React et accède à la base Oracle via sa propre API."
+      }
+    },
+    {
+      "name": "ResumeTurbo.com",
+      "link": "https://resumeturbo.com",
+      "description": {
+        "en": "Dynamic online resume generator. Implemented SwiftLaTeX, a WebAssembly LaTeX compiler, for real-time in-browser LaTeX rendering, and Mozilla's PDF.js for cross-platform PDF viewing.",
+        "fr": "Générateur de CV en ligne dynamique. Intègre SwiftLaTeX, un compilateur LaTeX en WebAssembly, pour un rendu LaTeX en temps réel dans le navigateur, ainsi que PDF.js de Mozilla pour l'affichage multiplateforme des PDF."
+      }
+    },
+    {
+      "name": "SimoHakim.com + Generator",
+      "link": "https://simohakim.com",
+      "description": {
+        "en": "Tool that generates a portfolio website and a matching LaTeX resume from a single JSON file. Example implementation: SimoHakim.com, my personal website.",
+        "fr": "Outil qui génère un site portfolio et un CV LaTeX assorti à partir d'un seul fichier JSON. Exemple d'implantation : SimoHakim.com, mon site personnel."
+      }
+    },
+    {
+      "name": "ToTheFinal.app",
+      "link": "https://tothefinal.app",
+      "description": {
+        "en": "World Cup companion built to answer the questions my friends and I kept asking mid-tournament: who do we play next, can we still finish first, and what time is kickoff here? One webapp with live scores, group standings, a knockout bracket that updates as results land, outcome simulation, and kickoff times in both your timezone and the stadium's. Built entirely in React, with Cloudflare Workers proxying and caching the score API to stay clear of its rate limits. Free, ad-free and account-free — it reached 200,000 users over the course of the tournament.",
+        "fr": "Compagnon de Coupe du monde né des questions que mes amis et moi nous posions en plein tournoi : qui affronte-t-on ensuite, peut-on encore finir premier, et à quelle heure joue-t-on ici ? Une seule application web réunit les scores en direct, les classements de groupes, un tableau des éliminatoires qui se met à jour au fil des résultats, la simulation de scénarios et les heures de match affichées à la fois dans votre fuseau et dans celui du stade. Entièrement développée en React, avec des Cloudflare Workers qui relaient et mettent en cache l'API de scores pour rester sous ses limites de débit. Gratuite, sans publicité ni compte — elle a rejoint 200 000 utilisateurs durant le tournoi."
+      }
+    },
+    {
+      "name": "Pairings.cloud",
+      "link": "",
+      "description": {
+        "en": "Web application for ranking and pairing players in large Swiss-system tournaments. Built with React for the Participants site and Electron for the Tournament Organizer companion app, leveraging Firebase as the backend database.",
+        "fr": "Application web de classement et d'appariement des joueurs dans les grands tournois au système suisse. Développée en React pour le site des participants et en Electron pour l'application compagnon des organisateurs, avec Firebase comme base de données."
+      }
+    },
+    {
+      "name": "ASCII Sign Language Classification (Kaggle)",
+      "link": "",
+      "description": {
+        "en": "Achieved 1st place in a Kaggle competition focused on classifying sign language images, using Random Forest and Convolutional Neural Networks (CNN) enhanced with XGBoost.",
+        "fr": "1re place dans une compétition Kaggle portant sur la classification d'images de langue des signes, à l'aide de forêts aléatoires et de réseaux de neurones convolutifs (CNN) enrichis par XGBoost."
+      }
+    },
+    {
+      "name": "Classification of Extreme Weather Events (Kaggle)",
+      "link": "",
+      "description": {
+        "en": "Developed models for detecting and classifying extreme weather events using climate data. Employed Logistic Regression, Linear SVM, and XGBoost.",
+        "fr": "Développement de modèles de détection et de classification d'événements météorologiques extrêmes à partir de données climatiques, au moyen de la régression logistique, du SVM linéaire et de XGBoost."
+      }
+    },
+    {
+      "name": "Solar Flare Detection via Radio Blackouts Phenomenon",
+      "link": "",
+      "description": {
+        "en": "Building a machine learning model to locally detect solar flares in real time by monitoring radio frequencies (5–25 MHz) via RTL-SDR hardware.",
+        "fr": "Construction d'un modèle d'apprentissage automatique capable de détecter localement les éruptions solaires en temps réel par la surveillance des fréquences radio (5 à 25 MHz) au moyen d'un RTL-SDR."
+      }
+    },
+    {
+      "name": "AbraCarta - Shopify App",
+      "link": "",
+      "description": {
+        "en": "Shopify-integrated platform that helps card shop owners manage live inventory, automate updates, and display pricing in storefronts. Architected with a .NET backend, React/Remix frontend, RESTful APIs for internal operations, and GraphQL for Shopify integration.",
+        "fr": "Plateforme intégrée à Shopify qui aide les boutiques de cartes à gérer leur inventaire en direct, à automatiser les mises à jour et à afficher les prix en vitrine. Architecture composée d'un backend .NET, d'un frontend React/Remix, d'APIs REST pour les opérations internes et de GraphQL pour l'intégration Shopify."
+      }
+    }
+  ],
+  "colors": {
+    "light": {
+      "first-color": "#022f66",
+      "first-color-light": "#8da7c7",
+      "title-color": "#111111",
+      "text-color": "#737373",
+      "input-color": "#e6f1ff",
+      "body-color": "#ffffff",
+      "container-color": "#fafafa",
+      "scroll-bar-color": "#e6e6e6",
+      "scroll-thumb-color": "#cccccc",
+      "hero-title": "#9fb1b6",
+      "hero-subtitle": "#9bb1b3",
+      "hero-bold": "#435052",
+      "hero-icon": "#abc3dc"
+    },
+    "dark": {
+      "first-color": "#fe7031",
+      "first-color-light": "#dbb69c",
+      "title-color": "#f2f2f2",
+      "text-color": "#656c76",
+      "input-color": "#272727",
+      "body-color": "#121212",
+      "container-color": "#272727",
+      "scroll-bar-color": "#424242",
+      "scroll-thumb-color": "#595959",
+      "hero-title": "#f39c12",
+      "hero-subtitle": "#ffffff",
+      "hero-bold": "#ffffff",
+      "hero-icon": "#ff7c11"
+    }
+  }
 }

@@ -2,13 +2,29 @@
   "personalInfo": {
     "surname": "Alex",
     "lastname": "Johnson",
-    "title": "Software Engineering Specialist",
-    "languages": ["English", "Spanish"],
+    "title": {
+      "en": "Software Engineering Specialist",
+      "es": "Especialista en ingeniería de software"
+    },
+    "languages": {
+      "en": "English, Spanish",
+      "es": "Inglés, español"
+    },
     "contact": {
       "phone": "+1 (555) 123-4567",
       "email": "alex.johnson@example.com",
-      "location": "San Francisco, CA, USA",
-      "address": "1234 Tech Lane, Suite 567, San Francisco, CA, 94102, USA"
+      "location": {
+        "en": "San Francisco, CA, USA",
+        "es": "San Francisco, CA, EE. UU."
+      },
+      "address": {
+        "en": "1234 Tech Lane, Suite 567, San Francisco, CA, 94102, USA",
+        "es": "1234 Tech Lane, oficina 567, San Francisco, CA, 94102, EE. UU."
+      }
+    },
+    "availability": {
+      "en": "",
+      "es": ""
     }
   },
   "socialLinks": {
@@ -17,97 +33,232 @@
     "twitter": "https://twitter.com/AlexJTech"
   },
   "home": {
-    "description": "With a Master's in Software Engineering from MIT and a passion for innovative technology, I'm eager to contribute to cutting-edge projects and drive impactful solutions in the tech industry."
+    "description": {
+      "en": "With a Master's in Software Engineering from MIT and a passion for innovative technology, I'm eager to contribute to cutting-edge projects and drive impactful solutions in the tech industry.",
+      "es": "Con un máster en ingeniería de software del MIT y una pasión por la tecnología innovadora, tengo muchas ganas de contribuir a proyectos punteros e impulsar soluciones con impacto real en el sector."
+    }
   },
   "about": {
-    "description": "I'm Alex Johnson, a dedicated software engineer with a focus on AI and machine learning. My journey through the world of tech has been marked by relentless learning and the drive to apply my skills in real-world scenarios, especially in the field of AI-driven technologies."
+    "description": {
+      "en": "I'm Alex Johnson, a dedicated software engineer with a focus on AI and machine learning. My journey through the world of tech has been marked by relentless learning and the drive to apply my skills in real-world scenarios, especially in the field of AI-driven technologies.",
+      "es": "Soy Alex Johnson, ingeniero de software centrado en la inteligencia artificial y el aprendizaje automático. Mi recorrido por el mundo de la tecnología ha estado marcado por el aprendizaje constante y las ganas de aplicar mis conocimientos a situaciones reales, sobre todo en tecnologías impulsadas por IA."
+    }
   },
   "resumeSkills": {
-    "programming": ["Python", "JavaScript", "C++", "Go", "Ruby", "React", "Node.js"],
-    "data": ["MySQL", "MongoDB", "DynamoDB", "Hadoop", "Spark"],
-    "miscellaneous": ["Docker", "Kubernetes", "AWS", "Azure", "Machine Learning", "JIRA", "Scrum"]
+    "programming": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Go",
+      "Ruby",
+      "React",
+      "Node.js"
+    ],
+    "data": [
+      "MySQL",
+      "MongoDB",
+      "DynamoDB",
+      "Hadoop",
+      "Spark"
+    ],
+    "miscellaneous": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "Machine Learning",
+      "JIRA",
+      "Scrum"
+    ]
   },
   "skills": [
     {
-      "category": "Programming Languages",
+      "category": {
+        "en": "Programming Languages",
+        "es": "Lenguajes de programación"
+      },
       "skills": [
-        {"name": "Python", "level": "Advanced"},
-        {"name": "JavaScript", "level": "Advanced"},
-        {"name": "C++", "level": "Intermediate"},
-        {"name": "Go", "level": "Intermediate"}
+        {
+          "name": "Python",
+          "level": "Advanced"
+        },
+        {
+          "name": "JavaScript",
+          "level": "Advanced"
+        },
+        {
+          "name": "C++",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Go",
+          "level": "Intermediate"
+        }
       ]
     },
     {
-      "category": "Data Management",
+      "category": {
+        "en": "Data Management",
+        "es": "Gestión de datos"
+      },
       "skills": [
-        {"name": "MySQL", "level": "Advanced"},
-        {"name": "MongoDB", "level": "Intermediate"},
-        {"name": "Hadoop", "level": "Beginner"}
+        {
+          "name": "MySQL",
+          "level": "Advanced"
+        },
+        {
+          "name": "MongoDB",
+          "level": "Intermediate"
+        },
+        {
+          "name": "Hadoop",
+          "level": "Beginner"
+        }
       ]
     }
   ],
   "education": [
     {
-      "degree": "M.Sc.",
-      "field": "Software Engineering",
-      "institution": "Massachusetts Institute of Technology (MIT)",
+      "degree": {
+        "en": "M.Sc.",
+        "es": "Máster"
+      },
+      "field": {
+        "en": "Software Engineering",
+        "es": "Ingeniería de software"
+      },
+      "institution": {
+        "en": "Massachusetts Institute of Technology (MIT)",
+        "es": "Instituto Tecnológico de Massachusetts (MIT)"
+      },
       "year": "2018 - 2020",
-      "details": "Focused on advanced software development, AI, and machine learning.",
-      "showInResume": "Y"
+      "details": {
+        "en": "Focused on advanced software development, AI, and machine learning.",
+        "es": "Centrado en desarrollo de software avanzado, IA y aprendizaje automático."
+      },
+      "showInResume": "Y",
+      "location": {
+        "en": "San Francisco, CA",
+        "es": "San Francisco, CA"
+      }
     },
     {
-      "degree": "B.Sc.",
-      "field": "Computer Science",
-      "institution": "University of California, Berkeley",
+      "degree": {
+        "en": "B.Sc.",
+        "es": "Grado"
+      },
+      "field": {
+        "en": "Computer Science",
+        "es": "Informática"
+      },
+      "institution": {
+        "en": "University of California, Berkeley",
+        "es": "Universidad de California, Berkeley"
+      },
       "year": "2014 - 2018",
-      "details": "Specialized in software development and computer systems.",
-      "showInResume": "Y"
+      "details": {
+        "en": "Specialized in software development and computer systems.",
+        "es": "Especializado en desarrollo de software y sistemas informáticos."
+      },
+      "showInResume": "Y",
+      "location": {
+        "en": "San Francisco, CA",
+        "es": "San Francisco, CA"
+      }
     }
   ],
   "workExperience": [
     {
-      "position": "Lead Software Engineer",
-      "company": "Tech Innovations Inc.",
+      "position": {
+        "en": "Lead Software Engineer",
+        "es": "Ingeniero de software principal"
+      },
+      "company": {
+        "en": "Tech Innovations Inc.",
+        "es": "Tech Innovations Inc."
+      },
       "years": "2021 - Present",
-      "details": "Leading a team of engineers in developing AI-powered applications.",
-      "resumeDetails": "Guiding project direction and implementing best practices in software development, with a focus on AI and ML integration.",
+      "details": {
+        "en": "Leading a team of engineers in developing AI-powered applications.",
+        "es": "Dirige un equipo de ingenieros en el desarrollo de aplicaciones impulsadas por IA."
+      },
+      "resumeDetails": {
+        "en": "Guiding project direction and implementing best practices in software development, with a focus on AI and ML integration.",
+        "es": "Orienta la dirección de los proyectos e implanta buenas prácticas de desarrollo, con énfasis en la integración de IA y aprendizaje automático."
+      },
       "showInResume": "Y"
     },
     {
-      "position": "Software Developer",
-      "company": "NextGen Solutions",
+      "position": {
+        "en": "Software Developer",
+        "es": "Desarrollador de software"
+      },
+      "company": {
+        "en": "NextGen Solutions",
+        "es": "NextGen Solutions"
+      },
       "years": "2020 - 2021",
-      "details": "Developed and maintained high-performance software solutions.",
-      "resumeDetails": "Worked on various projects, focusing on backend development and cloud integration, delivering robust and scalable software.",
+      "details": {
+        "en": "Developed and maintained high-performance software solutions.",
+        "es": "Desarrolló y mantuvo soluciones de software de alto rendimiento."
+      },
+      "resumeDetails": {
+        "en": "Worked on various projects, focusing on backend development and cloud integration, delivering robust and scalable software.",
+        "es": "Participó en varios proyectos centrados en el desarrollo backend y la integración en la nube, entregando software robusto y escalable."
+      },
       "showInResume": "Y"
     }
   ],
   "testimonials": [
     {
       "name": "Jane Doe",
-      "role": "CTO, Tech Innovations Inc.",
-      "testimonial": "Alex's contribution to our AI projects has been invaluable. His innovative thinking and technical expertise have driven our success.",
+      "role": {
+        "en": "CTO, Tech Innovations Inc.",
+        "es": "CTO, Tech Innovations Inc."
+      },
+      "testimonial": {
+        "en": "Alex's contribution to our AI projects has been invaluable. His innovative thinking and technical expertise have driven our success.",
+        "es": "La contribución de Alex a nuestros proyectos de IA ha sido inestimable. Su pensamiento innovador y su solvencia técnica han impulsado nuestro éxito."
+      },
       "image": "assets/img/default-woman.png"
     },
     {
       "name": "John Smith",
-      "role": "Senior Developer, NextGen Solutions",
-      "testimonial": "Working with Alex was a learning experience. His code is not only efficient but also elegantly written and easy to understand.",
+      "role": {
+        "en": "Senior Developer, NextGen Solutions",
+        "es": "Desarrollador sénior, NextGen Solutions"
+      },
+      "testimonial": {
+        "en": "Working with Alex was a learning experience. His code is not only efficient but also elegantly written and easy to understand.",
+        "es": "Trabajar con Alex fue todo un aprendizaje. Su código no solo es eficiente, sino que está escrito con elegancia y resulta fácil de entender."
+      },
       "image": "assets/img/default-man.png"
     }
   ],
   "projects": [
     {
       "name": "AI-Driven Market Analysis Tool",
-      "description": "Led the development of an AI tool for real-time market analysis, implementing machine learning algorithms for predictive analytics."
+      "description": {
+        "en": "Led the development of an AI tool for real-time market analysis, implementing machine learning algorithms for predictive analytics.",
+        "es": "Lideró el desarrollo de una herramienta de IA para el análisis de mercado en tiempo real, con algoritmos de aprendizaje automático para analítica predictiva."
+      },
+      "link": "https://example.com/market-analysis"
     },
     {
       "name": "Cloud Infrastructure Optimization",
-      "description": "Developed a set of scripts and tools for optimizing cloud resource usage, reducing operational costs by 30%."
+      "description": {
+        "en": "Developed a set of scripts and tools for optimizing cloud resource usage, reducing operational costs by 30%.",
+        "es": "Desarrolló un conjunto de scripts y herramientas para optimizar el uso de recursos en la nube, reduciendo los costes operativos un 30 %."
+      },
+      "link": "https://example.com/cloud-optimizer"
     },
     {
       "name": "E-commerce Website Revamp",
-      "description": "Revamped the backend of a major e-commerce site, improving scalability and performance."
+      "description": {
+        "en": "Revamped the backend of a major e-commerce site, improving scalability and performance.",
+        "es": "Renovó el backend de un gran sitio de comercio electrónico, mejorando su escalabilidad y su rendimiento."
+      },
+      "link": ""
     }
   ],
   "colors": {
@@ -141,5 +292,14 @@
       "hero-bold": "#ADADAD",
       "hero-icon": "#7B7B7B"
     }
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "resumeSummary": {
+    "en": "I'm Alex Johnson, a dedicated software engineer with a focus on AI and machine learning. My journey through the world of tech has been marked by relentless learning and the drive to apply my skills in real-world scenarios, especially in the field of AI-driven technologies.",
+    "es": "Soy Alex Johnson, ingeniero de software centrado en la inteligencia artificial y el aprendizaje automático. Mi recorrido por el mundo de la tecnología ha estado marcado por el aprendizaje constante y las ganas de aplicar mis conocimientos a situaciones reales, sobre todo en tecnologías impulsadas por IA."
   }
 }

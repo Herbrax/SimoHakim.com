@@ -1,0 +1,18 @@
+{
+  "name": "simocv2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Overhauled front-end for simohakim.com",
+  "scripts": {
+    "images": "node tools/optimize-images.mjs",
+    "build": "node tools/build.mjs && node tools/build-resume.mjs",
+    "build:site": "node tools/build.mjs",
+    "build:resume": "node tools/build-resume.mjs",
+    "resume:pdf": "node tools/build-resume.mjs && node tools/compile-resume.mjs",
+    "serve": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  }
+}

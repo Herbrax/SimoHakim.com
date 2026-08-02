@@ -1,0 +1,121 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+    \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+    \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+    \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+    \usepackage[utf8]{inputenc}
+    \usepackage{fontawesome}
+    \usepackage{fontspec}
+    \usepackage{tabularx}
+    \usepackage{ragged2e}
+    \usepackage[scale=0.9]{geometry}
+    \usepackage{multicol}
+    \usepackage{import}
+    \usepackage{color}
+    \definecolor{DarkBlue}{rgb}{0, 0, 0.7}
+    \newcommand*{\customcventry}[7][.25em]{
+    \begin{tabular}{@{}l} 
+        {\bfseries #4}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\bfseries #5}
+    \end{tabular} \\
+    \begin{tabular}{@{}l} 
+        {\itshape #3}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\itshape #2}
+    \end{tabular}
+    \ifx&#7&%
+    \else{\\%
+        \begin{minipage}{\maincolumnwidth}%
+        \footnotesize #7%
+        \end{minipage}}\fi%
+    \par\addvspace{#1}}
+    \newcommand*{\customcvproject}[4][.25em]{
+    %   \vfill\noindent
+    \begin{tabular}{@{}l} 
+        {\small\bfseries #2} % Apply small font size to the project title
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\footnotesize\itshape #3} % Apply small font size to the project date
+    \end{tabular}
+    \ifx&#4&%
+    \else{\\%
+        \begin{minipage}{\maincolumnwidth}%
+        \footnotesize #4 %Apply small font size to the project description
+        \end{minipage}}\fi%
+    \par\addvspace{#1}}
+    \setlength{\tabcolsep}{12pt}
+    % Personal Data/ %
+    \name{Alex}{Johnson}
+    \address{1234 Tech Lane, Suite 567, San Francisco, CA, 94102, USA}
+    % Personal Data\ %
+
+    \begin{document}
+
+    \makecvtitle
+    \vspace*{-23mm}
+    
+    \begin{center}
+    \begin{tabular}{ c c c c }
+    % Contact line/ %
+    \faLanguage\enspace English, Spanish &\faEnvelopeO\enspace alex.johnson@example.com & \faGithub\enspace \href{https://github.com/AlexJohnsonTech}{GitHub} & \faMobile\enspace +1 (555) 123-4567 \\
+    % Contact Line\ %
+    \end{tabular}
+    \end{center}
+    
+    \section{ABOUT}
+    % About Section/ %
+    With a Master's in Software Engineering from MIT and a passion for innovative technology, I'm eager to contribute to cutting-edge projects and drive impactful solutions in the tech industry.
+    % About Section\ %
+    
+    \section{SKILLS}
+    % Resume Skills/ %
+    \textbf{Programming:} Python, JavaScript, C++, Go, Ruby, React, Node.js\\*
+    \textbf{Data:} MySQL, MongoDB, DynamoDB, Hadoop, Spark\\*
+    \textbf{Miscellaneous:} Docker, Kubernetes, AWS, Azure, Machine Learning, JIRA, Scrum
+    % Resume Skills\ %
+    \section{EDUCATION}
+% Education/ %
+{\customcventry{2018 - 2020}{M.Sc. in Software Engineering}{Massachusetts Institute of Technology (MIT)}{}{}
+{Focused on advanced software development, AI, and machine learning.}
+}
+{\customcventry{2014 - 2018}{B.Sc. in Computer Science}{University of California, Berkeley}{}{}
+{Specialized in software development and computer systems.}
+}
+% Education\ %
+\section{EXPERIENCE}
+% Experience/ %
+{\customcventry{2021 - Present}{Lead Software Engineer}{Tech Innovations Inc.}{Montreal, QC}{}
+{\begin{itemize}
+    \item Guiding project direction and implementing best practices in software development, with a focus on AI and ML integration.
+\end{itemize}
+}}
+{\customcventry{2020 - 2021}{Software Developer}{NextGen Solutions}{Montreal, QC}{}
+{\begin{itemize}
+    \item Worked on various projects, focusing on backend development and cloud integration, delivering robust and scalable software.
+\end{itemize}
+}}
+% Experience\ %
+\section{PROJECTS}
+% Projects/ %
+{\customcvproject{AI-Driven Market Analysis Tool}{}
+{\begin{itemize}
+  \item Led the development of an AI tool for real-time market analysis, implementing machine learning algorithms for predictive analytics.
+\end{itemize}
+}}
+{\customcvproject{Cloud Infrastructure Optimization}{}
+{\begin{itemize}
+  \item Developed a set of scripts and tools for optimizing cloud resource usage, reducing operational costs by 30%.
+\end{itemize}
+}}
+{\customcvproject{E-commerce Website Revamp}{}
+{\begin{itemize}
+  \item Revamped the backend of a major e-commerce site, improving scalability and performance.
+\end{itemize}
+}}
+% Projects\ %
+\end{document}
